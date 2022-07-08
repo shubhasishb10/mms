@@ -2,44 +2,73 @@ package com.example.demo.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+import java.util.Objects;
+import java.util.UUID;
 
 public class Box {
 
+    private String boxId;
     private String number;
     private String location;
-    private BoxSize size;
+    private int capacity;
     private String name;
     private List<Medicine> medicines;
 
-    public Box(String number, String location, BoxSize size, String name){
-        medicines = new ArrayList<>();
+    public Box(String boxId, String number, String location, int capacity, String name) {
+        this.boxId = UUID.randomUUID().toString();
         this.number = number;
         this.location = location;
-        this.size = size;
-
+        this.capacity = capacity;
+        this.name = name;
+        medicines = new ArrayList<>();
     }
 
-    public List<Medicine> addMedicine(Medicine medicine){
-        Optional<Medicine> addMedicine = Optional.ofNullable(medicine);
-        addMedicine.ifPresent(value -> this.medicines.add(value));
-        return medicines;
+    public String getNumber() {
+        return number;
     }
 
-
-    public enum BoxSize {
-        SMALL,
-        MEDIUM,
-        LARGE
+    public void setNumber(String number) {
+        this.number = number;
     }
-}
 
-class ParamTest {
-
-    public static void main(String[] args) {
-        new ParamTest().test("Hello");
+    public String getLocation() {
+        return location;
     }
-    public void test(String str, String... str1) {
 
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public int getSize() {
+        return capacity;
+    }
+
+    public void setSize(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Medicine> getMedicinesInBox() {
+        return this.medicines;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Box)) return false;
+        Box box = (Box) o;
+        return boxId.equals(box.boxId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(boxId);
     }
 }

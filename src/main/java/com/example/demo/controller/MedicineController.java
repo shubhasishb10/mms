@@ -1,13 +1,13 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Medicine;
+import com.example.demo.repository.MedicineStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.client.OkHttp3ClientHttpRequestFactory;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,9 +15,19 @@ import java.util.List;
 @RequestMapping("/medicine")
 public class MedicineController {
 
+    @Autowired
+    private MedicineStore store;
+
     private static final Logger logger = LoggerFactory.getLogger(MedicineController.class);
 
+    @GetMapping("/list")
     public ResponseEntity<List<Medicine>> listMedicines(int pageNo, int recordPerPage) {
-        return new ResponseEntity<>( null,HttpStatus.OK);
+        //TODO get all medicines
+        return null;
+    }
+    @PostMapping("/{boxNo}")
+    public ResponseEntity<Medicine> addMedicine(@RequestBody Medicine medicine, @PathVariable String boxNo, BindingResult bindingResult) {
+        //TODO call service to add medicine
+        return null;
     }
 }
