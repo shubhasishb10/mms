@@ -23,6 +23,9 @@ public class Box {
         medicines = new ArrayList<>();
     }
 
+    public String getBoxId(){
+        return boxId;
+    }
     public String getNumber() {
         return number;
     }

@@ -79,4 +79,7 @@ public class Medicine {
     public void setVolume(int volume) {
         this.volume = volume;
     }
+    public List<Box> getBoxes(){
+        return boxes;
+    }
 }
