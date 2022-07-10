@@ -1,19 +1,35 @@
 package com.example.demo.model;
 
+import javax.persistence.*;
 import java.util.*;
 
+@Entity
+@Table(name = "medicine")
 public class Medicine {
 
     // Unique id for a medicine as id
-    private final String medicineId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long medicineId;
     private String name;
     private String company;
     private double price;
+
+    @Temporal(TemporalType.DATE)
     private Date purchaseDate;
     private int volume;
-    private List<Box> boxes;
+    private int boxNumber;
+    @Temporal(TemporalType.DATE)
+    private Date sellDate;
 
-    public Medicine(String name, String company, double price, Date purchaseDate, int volume) {
+    @Transient
+    List<Integer> containingBoxes;
+    @Transient
+    String boxes;
+    /*@ManyToMany()
+    private List<Box> boxes;*/
+
+/*    public Medicine(String name, String company, double price, Date purchaseDate, int volume) {
         this.medicineId = UUID.randomUUID().toString();
         this.name = name;
         this.company = company;
@@ -21,22 +37,26 @@ public class Medicine {
         this.purchaseDate = purchaseDate;
         this.volume = volume;
         boxes = new ArrayList<>();
-    }
+    }*/
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Medicine)) return false;
         Medicine medicine = (Medicine) o;
-        return this.medicineId.equals(medicine.medicineId);
+        return this.medicineId == medicine.medicineId;
     }
 
     @Override
     public int hashCode() {
-        return medicineId.hashCode();
+        return Objects.hashCode(medicineId);
     }
 
-    public String getMedicineId() {
+    public void setMedicineId(long medicineId) {
+        this.medicineId = medicineId;
+    }
+
+    public long getMedicineId() {
         return medicineId;
     }
 
@@ -79,7 +99,37 @@ public class Medicine {
     public void setVolume(int volume) {
         this.volume = volume;
     }
-    public List<Box> getBoxes(){
+    /*public List<Box> getBoxes(){
         return boxes;
+    }*/
+    public int getBoxNumber(){
+        return boxNumber;
+    }
+    public void setBoxNumber(int boxNumber) {
+        this.boxNumber = boxNumber;
+    }
+
+    public Date getSellDate() {
+        return sellDate;
+    }
+
+    public void setSellDate(Date sellDate) {
+        this.sellDate = sellDate;
+    }
+
+    public List<Integer> getContainingBoxes() {
+        return containingBoxes;
+    }
+
+    public void setContainingBoxes(List<Integer> containingBoxes) {
+        this.containingBoxes = containingBoxes;
+    }
+
+    public String getBoxes() {
+        return boxes;
+    }
+
+    public void setBoxes(String boxes) {
+        this.boxes = boxes;
     }
 }

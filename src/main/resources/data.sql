@@ -1,0 +1,10 @@
+TRUNCATE TABLE medicine;
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 1', "Test Company 1", 197.98, NOW(), 100, 12);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 2', "Test Company 3", 197.98, NOW(), 100, 13);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 3', "Test Company 1", 155.98, NOW(), 200, 6);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 4', "Test Company 2", 78.98, NOW(), 10, 8);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 5', "Test Company 3", 119.98, NOW(), 100, 11);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 6', "Test Company 4", 188.98, NOW(), 100, 6);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 7', "Test Company 5", 143.98, NOW(), 30, 10);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 7', "Test Company 1", 100.98, NOW(), 450, 4);
+INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 8', "Test Company 5", 187.98, NOW(), 100, 22);

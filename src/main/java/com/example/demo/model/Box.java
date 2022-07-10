@@ -1,27 +1,34 @@
 package com.example.demo.model;
 
-import java.util.ArrayList;
+import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
-import java.util.UUID;
 
+/**
+ * This is not in use as of now. //TODO Implement it later
+ */
+//@Entity
+//@Table(name = "box")
 public class Box {
 
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private String boxId;
     private String number;
     private String location;
     private int capacity;
     private String name;
+
     private List<Medicine> medicines;
 
-    public Box(String boxId, String number, String location, int capacity, String name) {
+    /*public Box(String boxId, String number, String location, int capacity, String name) {
         this.boxId = UUID.randomUUID().toString();
         this.number = number;
         this.location = location;
         this.capacity = capacity;
         this.name = name;
         medicines = new ArrayList<>();
-    }
+    }*/
 
     public String getBoxId(){
         return boxId;
