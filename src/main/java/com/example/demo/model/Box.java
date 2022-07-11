@@ -4,40 +4,28 @@ import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * This is not in use as of now. //TODO Implement it later
- */
-//@Entity
-//@Table(name = "box")
+@Entity
+@Table(name = "box")
 public class Box {
 
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String boxId;
-    private String number;
+    private int number;
     private String location;
     private int capacity;
     private String name;
-
-    private List<Medicine> medicines;
-
-    /*public Box(String boxId, String number, String location, int capacity, String name) {
-        this.boxId = UUID.randomUUID().toString();
-        this.number = number;
-        this.location = location;
-        this.capacity = capacity;
-        this.name = name;
-        medicines = new ArrayList<>();
-    }*/
+    @OneToMany(mappedBy = "box", fetch = FetchType.LAZY)
+    private List<MedicineBoxes> medicinesBoxes;
 
     public String getBoxId(){
         return boxId;
     }
-    public String getNumber() {
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
@@ -65,8 +53,8 @@ public class Box {
         this.name = name;
     }
 
-    public List<Medicine> getMedicinesInBox() {
-        return this.medicines;
+    public List<MedicineBoxes> getMedicinesInBox() {
+        return this.medicinesBoxes;
     }
 
     @Override
@@ -74,11 +62,22 @@ public class Box {
         if (this == o) return true;
         if (!(o instanceof Box)) return false;
         Box box = (Box) o;
-        return boxId.equals(box.boxId);
+        return name.equalsIgnoreCase(box.name) && number == box.number;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(boxId);
+        return Objects.hash(name, number);
+    }
+
+    @Override
+    public String toString() {
+        return "Box{" +
+                "boxId='" + boxId + '\'' +
+                ", number='" + number + '\'' +
+                ", location='" + location + '\'' +
+                ", capacity=" + capacity +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

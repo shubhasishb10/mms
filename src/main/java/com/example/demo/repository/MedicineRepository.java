@@ -11,14 +11,12 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-public interface MedicineRepository extends JpaRepository<Medicine, Long> {
+public interface MedicineRepository extends JpaRepository<Medicine, Long>, MedicineExtendedRepository {
 
     //TODO extra logic to do db operation
     List<Medicine> findMedicineByName(String name);
     List<Medicine> findMedicineByCompany(String company);
     List<Medicine> findMedicineByNameStartingWith(String name);
-    List<Medicine> findMedicineByBoxNumber(int boxNumber);
-    @Modifying
-    @Query("update Medicine m set m.sellDate = :date where m.medicineId = :medicineId")
-    int sellMedicineOnDate(@Param("date") Date date, @Param("medicineId") long medicineId);
+    //List<Medicine> findMedicineByBoxNumber(int boxNumber);
+    Medicine findMedicineByNameAndCompanyAndVolume(String name, String company, int volume);
 }

@@ -1,14 +1,12 @@
 package com.example.demo.service;
 
+import com.example.demo.model.Box;
+import com.example.demo.repository.BoxRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-//TODO implement this functionality later
 @Service
-public class BoxService {
+public interface BoxService {
 
-    //TODO box service related logic
-
-    // Get box by number
-    // Get box by medicine name
-
+    Box findBoxByNumber(int number);
 }

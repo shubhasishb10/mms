@@ -6,24 +6,35 @@
 </head>
 <body>
 <div class="container">
+    <br/>
+    <br/>
+    <div class="row">
+        <a th:if="${!isSearchResult}" class="col-1 me-2 btn btn-primary" th:href="@{/mvc/medicine/add}">Add</a>
+        <a th:if="${!isSearchResult}" class="col-1 btn btn-primary" th:href="@{/mvc/medicine/search}">Search</a>
+        <a th:if="${isSearchResult}" class="col-1 btn btn-primary" th:href="@{/mvc/medicine/list}">Back</a>
+    </div>
+    <br/>
+    <br/>
+    <h3 class="text-center alert alert-success" th:text="${headerText}"></h3>
+    <br/>
     <table class="table table-bordered">
         <tr class="table-primary">
             <td>Name</td>
             <td>Company</td>
             <td>Price</td>
-            <td>Volume</td>
+            <td>ML</td>
             <td>Box Number</td>
-            <td>Purchase Date</td>
-            <td>Sell Date</td>
         </tr>
         <tr th:each="medicine : ${medicineList}">
-            <td><a th:text="${medicine.name}" th:href="@{|/mvc/medicine/${medicine.medicineId}|}" /> </td>
-            <td th:text="${medicine.company}"></td>
-            <td th:text="${medicine.price}"></td>
-            <td th:text="${medicine.volume}"></td>
-            <td th:text="${medicine.boxNumber}"></td>
-            <td th:text="${medicine.purchaseDate}"></td>
-            <td th:text="${medicine.sellDate}"></td>
+            <td><a th:text="${medicine.name}" th:href="@{|/mvc/medicine/${medicine.medicineId}|}" />&nbsp;&nbsp;
+                <span th:if="${medicine.totalMedicinePresent} < 15 and ${medicine.totalMedicinePresent} >= 5" class="badge bg-warning" th:text="${medicine.totalMedicinePresent}"/>
+                <span th:if="${medicine.totalMedicinePresent} >= 15" class="badge bg-success" th:text="${medicine.totalMedicinePresent}"/>
+                <span th:if="${medicine.totalMedicinePresent} < 5" class="badge bg-danger" th:text="${medicine.totalMedicinePresent}"/>
+            </td>
+            <td class="text-center" th:text="${medicine.company}"></td>
+            <td class="text-center" th:text="${medicine.price}"></td>
+            <td class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
+            <td th:text="${medicine.boxes}"></td>
         </tr>
     </table>
 </div>

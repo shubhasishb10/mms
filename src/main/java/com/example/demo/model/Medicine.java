@@ -18,33 +18,39 @@ public class Medicine {
     @Temporal(TemporalType.DATE)
     private Date purchaseDate;
     private int volume;
+    @OneToMany(mappedBy = "medicine", fetch = FetchType.LAZY)
+    private List<MedicineBoxes> medicineBoxes;
+    @Transient
+    private List<Integer> containingBoxes = new ArrayList<>();
+    @Transient
+    private String boxes;
+    @Transient
     private int boxNumber;
-    @Temporal(TemporalType.DATE)
-    private Date sellDate;
 
     @Transient
-    List<Integer> containingBoxes;
-    @Transient
-    String boxes;
-    /*@ManyToMany()
-    private List<Box> boxes;*/
+    private int count;
 
-/*    public Medicine(String name, String company, double price, Date purchaseDate, int volume) {
-        this.medicineId = UUID.randomUUID().toString();
-        this.name = name;
-        this.company = company;
-        this.price = price;
-        this.purchaseDate = purchaseDate;
-        this.volume = volume;
-        boxes = new ArrayList<>();
-    }*/
+    @Transient
+    private int totalMedicinePresent;
+
+    @Transient
+    private Map<Integer, Integer> medicineCountByBoxNumber = new HashMap<>();
+
+    public List<MedicineBoxes> getMedicineBoxes() {
+        return medicineBoxes;
+    }
+
+    public void setMedicineBoxes(List<MedicineBoxes> medicineBoxes) {
+        this.medicineBoxes = medicineBoxes;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Medicine)) return false;
         Medicine medicine = (Medicine) o;
-        return this.medicineId == medicine.medicineId;
+        return this.name.equalsIgnoreCase(medicine.name) && this.company.equalsIgnoreCase(medicine.company) &&
+                this.volume == medicine.volume;
     }
 
     @Override
@@ -65,7 +71,7 @@ public class Medicine {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name.toLowerCase();
     }
 
     public String getCompany() {
@@ -73,7 +79,7 @@ public class Medicine {
     }
 
     public void setCompany(String company) {
-        this.company = company;
+        this.company = company.toLowerCase();
     }
 
     public double getPrice() {
@@ -99,23 +105,6 @@ public class Medicine {
     public void setVolume(int volume) {
         this.volume = volume;
     }
-    /*public List<Box> getBoxes(){
-        return boxes;
-    }*/
-    public int getBoxNumber(){
-        return boxNumber;
-    }
-    public void setBoxNumber(int boxNumber) {
-        this.boxNumber = boxNumber;
-    }
-
-    public Date getSellDate() {
-        return sellDate;
-    }
-
-    public void setSellDate(Date sellDate) {
-        this.sellDate = sellDate;
-    }
 
     public List<Integer> getContainingBoxes() {
         return containingBoxes;
@@ -131,5 +120,49 @@ public class Medicine {
 
     public void setBoxes(String boxes) {
         this.boxes = boxes;
+    }
+
+    public Map<Integer, Integer> getMedicineCountByBoxNumber() {
+        return medicineCountByBoxNumber;
+    }
+
+    public void setMedicineCountByBoxNumber(Map<Integer, Integer> medicineCountByBoxNumber) {
+        this.medicineCountByBoxNumber = medicineCountByBoxNumber;
+    }
+
+    public void setBoxNumber(int boxNumber) {
+        this.boxNumber = boxNumber;
+    }
+    public int getBoxNumber(){
+        return boxNumber;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getTotalMedicinePresent() {
+        return totalMedicinePresent;
+    }
+
+    public void setTotalMedicinePresent(int totalMedicinePresent) {
+        this.totalMedicinePresent = totalMedicinePresent;
+    }
+
+    @Override
+    public String toString() {
+        return "Medicine{" +
+                "medicineId=" + medicineId +
+                ", name='" + name + '\'' +
+                ", company='" + company + '\'' +
+                ", price=" + price +
+                ", purchaseDate=" + purchaseDate +
+                ", volume=" + volume +
+                ", box=" + medicineBoxes +
+                '}';
     }
 }

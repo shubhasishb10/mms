@@ -1,0 +1,60 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Spring Boot Application</title>
+</head>
+<body>
+<div class="container">
+    <br/>
+    <a class="btn btn-primary" th:href="@{/mvc/medicine/list}">Back</a>
+    <br/>
+    <br/>
+    <h3 class="text-center alert alert-success">Medicine Details</h3>
+    <form class="row g-3">
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" style="background-color:#95edea" disabled class="form-control" id="name" th:field="${medicine.name}"/>
+        </div>
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="company" class="form-label">Company</label>
+            <input type="text" disabled class="form-control" id="company" th:field="${medicine.company}"/>
+        </div>
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="price" class="form-label">Price</label>
+            <input type="text" disabled class="form-control" id="price" th:field="${medicine.price}"/>
+        </div>
+        <!--<div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="count" class="form-label">Count</label>
+            <input type="text" class="form-control" id="count" th:field="${medicine.count}"/>
+        </div>-->
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="volume" class="form-label">ML</label>
+            <input type="text" disabled class="form-control" id="volume" th:field="${medicine.volume}"/>
+        </div>
+
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="purchaseDate" class="form-label">Date Purchased</label>
+            <input type="text" disabled class="form-control" id="purchaseDate" th:field="${medicine.purchaseDate}"/>
+        </div>
+        <!--<div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="boxNo" class="form-label">Box Number</label>
+            <input type="text" class="form-control" id="boxNo" th:field="${medicine.boxNumber}"/>
+        </div>-->
+        <table class="table table-bordered">
+            <tr class="table-primary">
+                <td>Box Number</td>
+                <td>Medicine Count</td>
+                <td>Sell Count</td>
+            </tr>
+            <tr th:each="medicineBox : ${medicine.medicineBoxes}">
+                <td class="text-center" th:text="${medicineBox.box.number}"></td>
+                <td class="text-center" th:text="${medicineBox.medicineCount}"></td>
+                <td><input type="number" class="form-control" /></td>
+            </tr>
+        </table>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+</div>
+</body>
+</html>

@@ -32,4 +32,6 @@ public interface MedicineService {
     Medicine sellMedicine(long medicineId);
 
     List<Medicine> findAllMedicine(int pageNumber, int recordPerPage);
+
+    List<Medicine> searchMedicine(String name, String company, int ml);
 }
