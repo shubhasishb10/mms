@@ -1,7 +1,8 @@
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="ISO-8859-1"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Spring Boot Application</title>
 </head>
 <body>
@@ -11,14 +12,15 @@
     <br/>
     <br/>
     <h3 class="text-center alert alert-success">Medicine Details</h3>
-    <form class="row g-3">
+    <form class="row g-3" action="#" th:action="@{/mvc/medicine/sell}" method="post" th:object="${medicineOrder}">
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="name" class="form-label">Name</label>
-            <input type="text" style="background-color:#95edea" disabled class="form-control" id="name" th:field="${medicine.name}"/>
+            <input type="text" style="background-color:#95edea" disabled class="form-control" id="name"
+                   th:field="${medicine.displayName}"/>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="company" class="form-label">Company</label>
-            <input type="text" disabled class="form-control" id="company" th:field="${medicine.company}"/>
+            <input type="text" disabled class="form-control" id="company" th:field="${medicine.companyDisplayName}"/>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="price" class="form-label">Price</label>
@@ -34,27 +36,107 @@
         </div>
 
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="purchaseDate" class="form-label">Date Purchased</label>
+            <label for="purchaseDate" class="form-label">Last Date of add</label>
             <input type="text" disabled class="form-control" id="purchaseDate" th:field="${medicine.purchaseDate}"/>
         </div>
-        <!--<div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="boxNo" class="form-label">Box Number</label>
-            <input type="text" class="form-control" id="boxNo" th:field="${medicine.boxNumber}"/>
-        </div>-->
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <p class="col-sm-6 col-xs-12 col-md-6">Total Count&nbsp;&nbsp;
+                    <span th:if="${medicine.totalMedicinePresent} < 15 and ${medicine.totalMedicinePresent} >= 5"
+                          class="badge bg-warning" th:text="${medicine.totalMedicinePresent}"/>
+                    <span th:if="${medicine.totalMedicinePresent} >= 15" class="badge bg-success"
+                          th:text="${medicine.totalMedicinePresent}"/>
+                    <span th:if="${medicine.totalMedicinePresent} < 5" class="badge bg-danger"
+                          th:text="${medicine.totalMedicinePresent}"/>
+                </p>
+                <div class="col-sm-6 col-xs-12 col-md-6">
+                    <a class="btn btn-warning" th:href="@{|update/${medicine.medicineId}|}">Add Stock</a>
+                </div>
+            </div>
+        </div>
+        <!-- Hidden input to get the value of medicineId from Medicine object -->
+        <input id="00-1-id-src" type="hidden" th:value="${medicine.medicineId}"/>
+        <!-- Hidden input to set the medicineId on MedicineOrder object  -->
+        <input id="00-1-id-dest" type="hidden" th:field="*{medicineId}"/>
         <table class="table table-bordered">
             <tr class="table-primary">
                 <td>Box Number</td>
                 <td>Medicine Count</td>
                 <td>Sell Count</td>
             </tr>
-            <tr th:each="medicineBox : ${medicine.medicineBoxes}">
-                <td class="text-center" th:text="${medicineBox.box.number}"></td>
+            <tr class="box-stock-details" th:each="medicineBox : ${medicine.medicineBoxes}">
+                <td class="text-center">
+                    <input hidden th:field="*{boxes[__${medicineBoxStat.index}__].boxNumber}"/>
+                    <input disabled class="form-control" type="text" th:value="${medicineBox.box.number}"/>
+                </td>
                 <td class="text-center" th:text="${medicineBox.medicineCount}"></td>
-                <td><input type="number" class="form-control" /></td>
+                <td><input type="number" th:field="*{boxes[__${medicineBoxStat.index}__].medicineCount}"
+                           class="form-control medicine_sell_input"/></td>
             </tr>
         </table>
-        <button class="btn btn-primary" type="submit">Sell</button>
+        <button id="submit_btn" th:disabled="${medicine.medicineBoxes.size() < 1}" class="btn btn-secondary" type="submit"
+                onclick="return function_0_0_0_()">Sell
+        </button>
     </form>
 </div>
 </body>
+<script>
+    function function_0_0_0_() {
+        var var0 = confirm('Are you sure you want to sell?');
+        if(var0 == true){
+            return function__01__box_traverse();
+        }else {
+            return false;
+        }
+    }
+    function function__02__number__assignment(_element){
+        var __element = _element.children[0];
+        var __tElement1 = __element.children[0];
+        var __tElement2 = __element.children[1];
+        // Copy value from 2 to 1
+        __tElement1.value = __tElement2.value;
+    }
+    function function__01__box_traverse(){
+        var rootElement = document.getElementsByClassName('box-stock-details');
+        for(var __i=0 ; __i < rootElement.length ; __i++) {
+            function__02__number__assignment(rootElement[__i]);
+        }
+        function_01_01_medicineId();
+        return true;
+    }
+    function function_01_01_medicineId(){
+        var _00_1_id_src = document.getElementById('00-1-id-src');
+        var _00_1_id_dest = document.getElementById('00-1-id-dest');
+        _00_1_id_dest.value = _00_1_id_src.value;
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        function__0_0_1_1(true);
+        var var0_1 = document.getElementsByClassName('medicine_sell_input');
+        for(var var1_0=0;var1_0<var0_1.length;var1_0++){
+            var0_1[var1_0].addEventListener('change', function(event){
+                function_s_b_0_0_1(event);
+            })
+        }
+    });
+    function function_s_b_0_0_1(event){
+        var var0_0 = document.getElementsByClassName('medicine_sell_input');
+        var var1_1 = 0;
+        for(var var1=0;var1<var0_0.length;var1++) {
+            var var_1_1_0 = var0_0[var1].value;
+            if(var_1_1_0 == "" || var_1_1_0 == undefined) {
+                var_1_1_0 = 0;
+            }
+            var1_1 = var1_1+parseInt(var_1_1_0);
+        }
+        if(var1_1 > 0) {
+            function__0_0_1_1(false);
+        }else {
+            function__0_0_1_1(true)
+        }
+    }
+    function function__0_0_1_1(var0_0_0){
+        document.getElementById('submit_btn').disabled = var0_0_0;
+    }
+</script>
 </html>

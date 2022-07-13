@@ -1,6 +1,8 @@
 select * from medicine;
 --truncate table box;
 --truncate table medicine_box;
+--truncate table medicine;
+--truncate table company;
 --INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 1', "Test Company 1", 197.98, NOW(), 100, 12);
 --INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 2', "Test Company 3", 197.98, NOW(), 100, 13);
 --INSERT INTO medicine(name, company, price, purchaseDate, volume, boxNumber) values ('Test Medicine 3', "Test Company 1", 155.98, NOW(), 200, 6);

@@ -11,34 +11,64 @@
     <a class="btn btn-primary" th:href="@{/mvc/medicine/list}">Back</a>
     <br/>
     <br/>
-    <h1 class="text-center alert alert-success">Insert Medicine</h1>
-    <form class="row g-3" action="#" th:action="@{/mvc/medicine/add}" method="post" th:object="${medicine}">
-        <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" th:field="*{name}"/>
+    <h3 class="text-center alert alert-success">Insert Medicine</h3>
+    <form class="row g-3" th:action="@{/mvc/medicine/add}" method="post" th:object="${medicine}">
+        <div th:if="${isUpdateRequest}">
+            <input type="hidden" th:field="*{medicineId}"/>
+            <input type="hidden" th:field="*{displayName}"/>
+            <input type="hidden" th:field="*{companyDisplayName}"/>
+            <input type="hidden" th:field="*{price}"/>
+            <input type="hidden" th:field="*{volume}" />
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="company" class="form-label">Company</label>
-            <input type="text" class="form-control" id="company" th:field="*{company}"/>
+            <label for="displayName" class="form-label">Name</label>
+            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="displayName" th:field="*{displayName}"/>
+            <p style="color:red" th:if="${#fields.hasErrors('displayName')}" th:errors="*{displayName}"></p>
+        </div>
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <label for="companyDisplayName" class="form-label">Company</label>
+            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="companyDisplayName" th:field="*{companyDisplayName}"/>
+            <p style="color:red" th:if="${#fields.hasErrors('companyDisplayName')}" th:errors="*{companyDisplayName}"></p>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="price" class="form-label">Price</label>
-            <input type="text" class="form-control" id="price" th:field="*{price}"/>
+            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="price" th:field="*{price}"/>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="count" class="form-label">Count</label>
             <input type="text" class="form-control" id="count" th:field="*{count}"/>
+            <p style="color:red" th:if="${#fields.hasErrors('count')}" th:errors="*{count}"></p>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="volume" class="form-label">ML</label>
-            <input type="text" class="form-control" id="volume" th:field="*{volume}"/>
+            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="volume" th:field="*{volume}"/>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="boxNo" class="form-label">Box Number</label>
             <input type="text" class="form-control" id="boxNo" th:field="*{boxNumber}"/>
         </div>
-        <button class="btn btn-primary" type="submit">Insert</button>
+        <button id="btn-insert" class="btn btn-primary" type="submit">Insert</button>
     </form>
 </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var var0_1 = document.getElementById('count');
+        var var1_1 = document.getElementById('boxNo');
+        var0_1.addEventListener('change', function(event){
+            fn_0_0_01();
+        });
+        var1_1.addEventListener('change', function(event){
+            fn_0_0_01();
+        });
+        function fn_0_0_01(){
+            if(var1_1.value!='' && var0_1.value !='' && var0_1.value > 0) function__0_0_1_1(false);
+            else function__0_0_1_1(true);
+        }
+        fn_0_0_01();
+    });
+    function function__0_0_1_1(var0_0_0){
+        document.getElementById('btn-insert').disabled = var0_0_0;
+    }
+</script>
 </html>

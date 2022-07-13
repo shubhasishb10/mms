@@ -17,21 +17,21 @@
     <br/>
     <h3 class="text-center alert alert-success" th:text="${headerText}"></h3>
     <br/>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-striped">
         <tr class="table-primary">
-            <td>Name</td>
-            <td>Company</td>
-            <td>Price</td>
-            <td>ML</td>
-            <td>Box Number</td>
+            <td class="text-center">Name</td>
+            <td class="text-center">Company</td>
+            <td class="text-center">Price</td>
+            <td class="text-center">ML</td>
+            <td class="text-center">Box Number</td>
         </tr>
         <tr th:each="medicine : ${medicineList}">
-            <td><a th:text="${medicine.name}" th:href="@{|/mvc/medicine/${medicine.medicineId}|}" />&nbsp;&nbsp;
+            <td><a th:text="${medicine.displayName}" th:href="@{|/mvc/medicine/${medicine.medicineId}|}" />&nbsp;&nbsp;
                 <span th:if="${medicine.totalMedicinePresent} < 15 and ${medicine.totalMedicinePresent} >= 5" class="badge bg-warning" th:text="${medicine.totalMedicinePresent}"/>
                 <span th:if="${medicine.totalMedicinePresent} >= 15" class="badge bg-success" th:text="${medicine.totalMedicinePresent}"/>
                 <span th:if="${medicine.totalMedicinePresent} < 5" class="badge bg-danger" th:text="${medicine.totalMedicinePresent}"/>
             </td>
-            <td class="text-center" th:text="${medicine.company}"></td>
+            <td class="text-center" th:text="${medicine.companyDisplayName}"></td>
             <td class="text-center" th:text="${medicine.price}"></td>
             <td class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
             <td th:text="${medicine.boxes}"></td>
