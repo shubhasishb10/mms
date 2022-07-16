@@ -78,7 +78,6 @@ public class MedicineBoxes {
     public String toString() {
         return "MedicineBoxes{" +
                 "medicineBoxId=" + medicineBoxId +
-                ", medicine=" + medicine +
                 ", box=" + box +
                 ", medicineCount=" + medicineCount +
                 '}';

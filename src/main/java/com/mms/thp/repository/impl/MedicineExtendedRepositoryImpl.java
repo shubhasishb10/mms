@@ -24,19 +24,24 @@ public class MedicineExtendedRepositoryImpl implements MedicineExtendedRepositor
 
     @Override
     public List<Medicine> searchMedicineByCriteria(SearchCriteria criteria) {
+
+        boolean hasMedicineNameInCriteria = null != criteria.getMedicineName();
+        boolean hasCompanyNameInCriteria = null != criteria.getCompanyName();
+        boolean hasMedicineVolumeInCriteria = 0 != criteria.getMedicineVolume();
+
         StringBuilder query = new StringBuilder(SEARCH_QUERY);
-        if(null != criteria.getMedicineName())
+        if(hasMedicineNameInCriteria)
             query.append(WHERE_NAME_CLAUSE);
-        if(null != criteria.getCompanyName())
+        if(hasCompanyNameInCriteria)
             query.append(WHERE_COMPANY_CLAUSE);
-        if(0 != criteria.getMedicineVolume())
+        if(hasMedicineVolumeInCriteria)
             query.append(WHERE_VOLUME_CLAUSE);
         TypedQuery<Medicine> medicineListQuery = entityManager.createQuery(query.toString(), Medicine.class);
-        if(null != criteria.getMedicineName())
+        if(hasMedicineNameInCriteria)
             medicineListQuery.setParameter(NAME_PARAM, "%"+criteria.getMedicineName()+"%");
-        if(null != criteria.getCompanyName())
+        if(hasCompanyNameInCriteria)
             medicineListQuery.setParameter(COMPANY_PARAM, "%"+criteria.getCompanyName()+"%");
-        if(0 != criteria.getMedicineVolume())
+        if(hasMedicineVolumeInCriteria)
             medicineListQuery.setParameter(VOLUME_PARAM, criteria.getMedicineVolume());
         return medicineListQuery.getResultList();
     }

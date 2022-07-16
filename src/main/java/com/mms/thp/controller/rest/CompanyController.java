@@ -1,4 +1,4 @@
-package com.mms.thp.controller;
+package com.mms.thp.controller.rest;
 
 import com.mms.thp.model.Company;
 import com.mms.thp.service.CompanyService;

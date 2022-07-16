@@ -1,7 +1,9 @@
 package com.mms.thp.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "retail")
@@ -9,27 +11,14 @@ public class Retail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private long medicineId;
+    private long retailId;
+    @OneToMany(targetEntity = RetailMedicine.class, cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "retailId", referencedColumnName = "retailId")
+    private List<RetailMedicine> retailMedicines = new ArrayList<>();
     @Temporal(TemporalType.DATE)
     private Date retailDate;
     private String customerName;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public long getMedicineId() {
-        return medicineId;
-    }
-
-    public void setMedicineId(long medicineId) {
-        this.medicineId = medicineId;
-    }
+    private String customerAddress;
 
     public Date getRetailDate() {
         return retailDate;
@@ -45,5 +34,25 @@ public class Retail {
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
+    }
+
+    public long getRetailId() {
+        return retailId;
+    }
+
+    public void setRetailId(long retailId) {
+        this.retailId = retailId;
+    }
+
+    public List<RetailMedicine> getRetailMedicines() {
+        return retailMedicines;
+    }
+
+    public String getCustomerAddress() {
+        return customerAddress;
+    }
+
+    public void setCustomerAddress(String customerAddress) {
+        this.customerAddress = customerAddress;
     }
 }
