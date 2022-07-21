@@ -2,6 +2,7 @@ package com.mms.thp.service;
 
 import com.mms.thp.dto.MedicineOrder;
 import com.mms.thp.model.Medicine;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -35,4 +36,11 @@ public interface MedicineService {
     List<Medicine> findAllMedicine(int pageNumber, int recordPerPage);
 
     List<Medicine> searchMedicine(String name, String company, int ml);
+
+    long getTotalMedicineCount();
+
+    void saveFile(MultipartFile file);
+    void loadMedicineRecordFromFile(String fileName);
+
+    List<Medicine> populateBoxesFieldAndTotalCountApi(List<Medicine> medicines);
 }

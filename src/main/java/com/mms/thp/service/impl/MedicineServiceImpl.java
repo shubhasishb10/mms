@@ -15,18 +15,24 @@ import com.mms.thp.repository.MedicineBoxRepository;
 import com.mms.thp.repository.MedicineRepository;
 import com.mms.thp.repository.RetailRepository;
 import com.mms.thp.service.MedicineService;
-import com.mms.thp.utility.StringUtility;
+import com.mms.thp.utility.ThpUtility;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
-import javax.persistence.Transient;
-import javax.security.auth.login.LoginException;
+import java.io.IOException;
 import java.time.Instant;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -89,6 +95,11 @@ public class MedicineServiceImpl implements MedicineService {
     }
 
     @Override
+    public long getTotalMedicineCount(){
+        return medicineRepository.count();
+    }
+
+    @Override
     public Medicine addMedicine(Medicine medicine) {
         LOGGER.info("{}|Start of(addMedicine)|Params: medicine={}", CLASS_TYPE, medicine);
         try{
@@ -109,12 +120,18 @@ public class MedicineServiceImpl implements MedicineService {
                 // Refreshing the last updated date
                 LOGGER.info("Medicine is present in the box, refreshing the purchase date");
                 theMedicine.setPurchaseDate(Date.from(Instant.now()));
+                medicineRepository.save(theMedicine);
             }
             LOGGER.info("Got the medicine, medicine={}", theMedicine);
             // Create or update the company with the medicine
             createOrSaveCompanyWithMedicine(medicine.getCompanyStringName(), theMedicine);
-            createMedicineBoxEntry(theMedicine, theBox, medicine.getCount());
+            if (medicine.getCount() > 0) {
+                createMedicineBoxEntry(theMedicine, theBox, medicine.getCount());
+            }else {
+                LOGGER.info("Medicine count is 0 not inserting in the medicineBox entity");
+            }
             LOGGER.info("{}|End of(addMedicine)|", CLASS_TYPE);
+            // For updating the
             return theMedicine;
         }catch(Exception e) {
             LOGGER.error("{}|Exception|{}", CLASS_TYPE, e);
@@ -270,6 +287,10 @@ public class MedicineServiceImpl implements MedicineService {
         return medicines;
     }
 
+    public List<Medicine> populateBoxesFieldAndTotalCountApi(List<Medicine> medicines) {
+        return populateBoxesFieldAndTotalCount(medicines);
+    }
+
     @Override
     public List<Medicine> searchMedicine(String name, String company, int ml) {
 
@@ -278,9 +299,9 @@ public class MedicineServiceImpl implements MedicineService {
             LOGGER.info("Creating search criteria");
             SearchCriteria.SearchCriteriaBuilder builder = SearchCriteria.builder();
             if(!"".equalsIgnoreCase(name))
-                builder.withMedicineName(StringUtility.normalizeString(name));
+                builder.withMedicineName(ThpUtility.normalizeString(name));
             if(!"".equalsIgnoreCase(company))
-                builder.withCompanyName(StringUtility.normalizeString(company));
+                builder.withCompanyName(ThpUtility.normalizeString(company));
             if(0 != ml)
                 builder.withMedicineVolume(ml);
             LOGGER.info("Searching medicine db with search criteria={}", builder.buildDto());
@@ -290,6 +311,75 @@ public class MedicineServiceImpl implements MedicineService {
         }
         LOGGER.info("{}|End of(searchMedicine)|", CLASS_TYPE);
         return null;
+    }
+
+    @Override
+    public void saveFile(MultipartFile file) {
+        // save the file in a temp location
+        // call loadFile with the filepath parameter
+        XSSFWorkbook workbook = null;
+        try {
+            workbook = new XSSFWorkbook(file.getInputStream());
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            if(sheet != null) {
+                Iterator<Row> rowIterator = sheet.rowIterator();
+                // Skipping the header row
+                rowIterator.next();
+                while (rowIterator.hasNext()) {
+                    Row row = rowIterator.next();
+                    addMedicine(prepareMedicineObject(row));
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }finally {
+            if(workbook != null) {
+                try {
+                    workbook.close();
+                } catch (IOException ignore) {
+                    ignore.printStackTrace();
+                }
+            }
+        }
+        System.out.println("Testing");
+    }
+
+    private Medicine prepareMedicineObject(Row row) {
+
+        Cell nameCell = row.getCell(ThpUtility.MedicineColumnIndex.NAME.ordinal());
+        Cell companyCell = row.getCell(ThpUtility.MedicineColumnIndex.COMPANY.ordinal());
+        Cell priceCell = row.getCell(ThpUtility.MedicineColumnIndex.PRICE.ordinal());
+        Cell countCell = row.getCell(ThpUtility.MedicineColumnIndex.COUNT.ordinal());
+        Cell mlCell = row.getCell(ThpUtility.MedicineColumnIndex.ML.ordinal());
+        Cell boxNumberCell = row.getCell(ThpUtility.MedicineColumnIndex.BOX_NUMBER.ordinal());
+        nameCell.setCellType(CellType.STRING);
+        companyCell.setCellType(CellType.STRING);
+        priceCell.setCellType(CellType.STRING);
+        countCell.setCellType(CellType.STRING);
+        mlCell.setCellType(CellType.STRING);
+        boxNumberCell.setCellType(CellType.STRING);
+        String name = nameCell.getStringCellValue();
+        String company = companyCell.getStringCellValue();
+        double price = Double.parseDouble(priceCell.getStringCellValue());
+        int count = Integer.parseInt(countCell.getStringCellValue());
+        int ml = Integer.parseInt(mlCell.getStringCellValue());
+        String boxNumber = boxNumberCell.getStringCellValue();
+
+        Medicine theMedicine = new Medicine();
+        theMedicine.setDisplayName(name);
+        theMedicine.setCompanyDisplayName(company);
+        theMedicine.setPrice(price);
+        theMedicine.setCount(count);
+        theMedicine.setVolume(ml);
+        theMedicine.setBoxNumber(boxNumber);
+
+        return theMedicine;
+    }
+
+    @Override
+    public void loadMedicineRecordFromFile(String fileName) {
+        // Load the file
+        // read the rows and insert in db
     }
 
     @Autowired

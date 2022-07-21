@@ -5,6 +5,8 @@ public enum WebPages {
     MEDICINE_DETAIL("medicine_detail"),
     ADD_MEDICINE("add_medicine"),
     SEARCH_MEDICINE("search_medicine"),
+    UPLOAD_FILE("upload_file"),
+    BOX_LIST("box_list"),
     INDEX("index");
     final String pageName;
     WebPages(String pageName) {

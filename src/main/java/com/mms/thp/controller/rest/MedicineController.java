@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -35,11 +36,6 @@ public class MedicineController {
         Medicine addedMedicine = service.addMedicine(medicine);
         return new ResponseEntity<>(addedMedicine, HttpStatus.OK);
     }
-
-    /*@GetMapping("/{medicineId}/sell")
-    public ResponseEntity<Medicine> sellMedicine(@PathVariable("medicineId") long medicineId) {
-        return new ResponseEntity<>(service.sellMedicine(medicineId), HttpStatus.OK);
-    }*/
 
     @GetMapping("/{medicineName}")
     public ResponseEntity<List<Medicine>> getMedicinesByName(@PathVariable("medicineName") String medicineName) {

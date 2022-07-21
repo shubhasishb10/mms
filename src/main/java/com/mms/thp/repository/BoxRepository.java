@@ -1,6 +1,7 @@
 package com.mms.thp.repository;
 
 import com.mms.thp.model.Box;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

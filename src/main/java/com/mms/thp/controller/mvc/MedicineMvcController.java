@@ -1,6 +1,7 @@
 package com.mms.thp.controller.mvc;
 
 import com.mms.thp.dto.MedicineOrder;
+import com.mms.thp.utility.ThpUtility;
 import com.mms.thp.utility.WebPages;
 import com.mms.thp.model.Medicine;
 import com.mms.thp.service.MedicineService;
@@ -12,9 +13,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.thymeleaf.util.StringUtils;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.stream.IntStream;
 
 @Controller
 @RequestMapping("/mvc/medicine")
@@ -27,14 +31,19 @@ public class MedicineMvcController {
     private MedicineService service;
 
     @GetMapping("/list")
-    public String getMedicineList(Model model){
+    public String getMedicineList(Model model, @RequestParam(value = "pageNo", defaultValue = "0") int pageNo) {
         LOGGER.info("{}|Start of(getMedicineList)|Params:|", CLASS_TYPE);
-        model.addAttribute("medicineList", service.findAllMedicine(0, 10));
-        model.addAttribute("headerText", "All Medicines");
+        if(pageNo < 0)
+            pageNo = 0;
+        model.addAttribute("medicineList", service.findAllMedicine(pageNo, ThpUtility.RECORD_PER_PAGE));
+        long totalMedicineCount = service.getTotalMedicineCount();
+        model.addAttribute("headerText", "ALL MEDICINES");
         model.addAttribute("isSearchResult", false);
+        ThpUtility.populateModelForPagination(model, totalMedicineCount, pageNo, "/mvc/medicine/list?");
         LOGGER.info("{}|End of(getMedicineList)|", CLASS_TYPE);
         return WebPages.INDEX.toString();
     }
+
     @GetMapping("/{medicineId}")
     public String loadMedicineDetailPage(@PathVariable("medicineId") long medicineId, Model model) {
         LOGGER.info("{}|Start of(loadMedicineDetailPage)|Params: medicineId={}|", CLASS_TYPE, medicineId);
@@ -69,13 +78,18 @@ public class MedicineMvcController {
     @PostMapping("/search")
     public String loadSearchResult(@RequestParam(value = "name") String name,
                                    @RequestParam(value = "company", required = false) String company,
-                                   @RequestParam(value = "ml", required = false, defaultValue = "0") String ml, Model model){
+                                   @RequestParam(value = "ml", required = false, defaultValue = "0") String ml, Model model,
+                                   @RequestParam(value = "pageNo", defaultValue = "0") int pageNo){
 
+        if(StringUtils.isEmpty(name) && StringUtils.isEmpty(company)){
+            return "redirect:/mvc/medicine/list";
+        }
         LOGGER.info("{}|Start of(loadSearchResult)|Params: name={}, company={}, ml={}|", CLASS_TYPE, name, company, ml);
         List<Medicine> resultMedicine = service.searchMedicine(name, company, Integer.parseInt(ml));
         model.addAttribute("medicineList", resultMedicine);
-        model.addAttribute("headerText", "Search Results");
+        model.addAttribute("headerText", "SEARCH RESULT");
         model.addAttribute("isSearchResult", true);
+        ThpUtility.populateModelForPagination(model, resultMedicine.size(), ThpUtility.RECORD_PER_PAGE, "/mvc/medicine/list?");
         LOGGER.info("{}|End of(loadSearchPage)|", CLASS_TYPE);
         return WebPages.INDEX.toString();
     }
@@ -99,5 +113,18 @@ public class MedicineMvcController {
         model.addAttribute("medicine", theMedicine);
         LOGGER.info("{}|End of(updateMedicineCount)|", CLASS_TYPE);
         return WebPages.ADD_MEDICINE.toString();
+    }
+
+    @GetMapping("/upload_excel")
+    public String loadUploadExcelFile() {
+        return WebPages.UPLOAD_FILE.toString();
+    }
+
+    @PostMapping("/upload_excel")
+    public String saveExcelFileRecord(@RequestParam("file") MultipartFile file, @RequestParam("adminKey") String adminKey) {
+        if(adminKey.equals(ThpUtility.ADMIN_KEY)) {
+            service.saveFile(file);
+        }
+        return "redirect:/mvc/medicine/list";
     }
 }

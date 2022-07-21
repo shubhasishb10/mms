@@ -1,53 +1,72 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Spring Boot Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>THP</title>
 </head>
 <body>
 <br/>
 <br/>
 <div class="container">
-    <a class="btn btn-primary" th:href="@{/mvc/medicine/list}">Back</a>
+    <div class="row" style="box-shadow:0px 0px 4px 0px;background-image: linear-gradient(to right, #edd0a8 , #f5bfcd, #f5f5c6, #b6f1fc);;padding:2px;">
+        <a class="btn btn-primary col-sm-1 col-xs-1 col-md-1" th:href="@{/mvc/medicine/list}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-reply-fill"
+                 viewBox="0 0 16 16">
+                <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+            </svg>
+        </a>
+    </div>
     <br/>
     <br/>
-    <h3 class="text-center alert alert-success">Insert Medicine</h3>
-    <form class="row g-3" th:action="@{/mvc/medicine/add}" method="post" th:object="${medicine}">
+    <h3  style="color:#105e69" class="text-center"><b>INSERT MEDICINE</b></h3>
+    <br/>
+
+    <form style="box-shadow:0px 0px 2px 0px;padding:10px;border-radius:3px;" class="row g-3" th:action="@{/mvc/medicine/add}" method="post" th:object="${medicine}">
         <div th:if="${isUpdateRequest}">
             <input type="hidden" th:field="*{medicineId}"/>
             <input type="hidden" th:field="*{displayName}"/>
             <input type="hidden" th:field="*{companyDisplayName}"/>
             <input type="hidden" th:field="*{price}"/>
-            <input type="hidden" th:field="*{volume}" />
+            <input type="hidden" th:field="*{volume}"/>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="displayName" class="form-label">Name</label>
-            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="displayName" th:field="*{displayName}"/>
+            <label for="displayName" class="form-label"><b>NAME</b></label>
+            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="displayName"
+                   th:field="*{displayName}"/>
             <p style="color:red" th:if="${#fields.hasErrors('displayName')}" th:errors="*{displayName}"></p>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="companyDisplayName" class="form-label">Company</label>
-            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="companyDisplayName" th:field="*{companyDisplayName}"/>
-            <p style="color:red" th:if="${#fields.hasErrors('companyDisplayName')}" th:errors="*{companyDisplayName}"></p>
+            <label for="companyDisplayName" class="form-label"><b>COMPANY</b></label>
+            <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="companyDisplayName"
+                   th:field="*{companyDisplayName}"/>
+            <p style="color:red" th:if="${#fields.hasErrors('companyDisplayName')}"
+               th:errors="*{companyDisplayName}"></p>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="price" class="form-label">Price</label>
+            <label for="price" class="form-label"><b>PRICE</b></label>
             <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="price" th:field="*{price}"/>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="count" class="form-label">Count</label>
+            <label for="count" class="form-label"><b>COUNT</b></label>
             <input type="text" class="form-control" id="count" th:field="*{count}"/>
             <p style="color:red" th:if="${#fields.hasErrors('count')}" th:errors="*{count}"></p>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="volume" class="form-label">ML</label>
+            <label for="volume" class="form-label"><b>ML</b></label>
             <input th:disabled="${isUpdateRequest}" type="text" class="form-control" id="volume" th:field="*{volume}"/>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <label for="boxNo" class="form-label">Box Number</label>
+            <label for="boxNo" class="form-label"><b>BOX NUMBER</b></label>
             <input type="text" class="form-control" id="boxNo" th:field="*{boxNumber}"/>
         </div>
-        <button id="btn-insert" class="btn btn-primary" type="submit">Insert</button>
+        <button id="btn-insert" class="btn btn-primary" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-journal-plus" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 .5-.5z"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+            </svg>&nbsp;&nbsp;INSERT
+        </button>
     </form>
 </div>
 </body>
@@ -70,5 +89,6 @@
     function function__0_0_1_1(var0_0_0){
         document.getElementById('btn-insert').disabled = var0_0_0;
     }
+
 </script>
 </html>

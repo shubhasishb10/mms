@@ -1,6 +1,6 @@
 package com.mms.thp.model;
 
-import com.mms.thp.utility.StringUtility;
+import com.mms.thp.utility.ThpUtility;
 import com.mms.thp.validation.annotation.CheckValue;
 
 import javax.persistence.*;
@@ -33,13 +33,14 @@ public class Medicine {
     private String boxes;
     @Transient
     private String boxNumber;
-
-    @CheckValue(expectedCount = 1, message = "Count should at least be 1")
     @Transient
     private int count;
 
     @Transient
     private int totalMedicinePresent;
+
+    @Transient
+    private int medicineInTheBox;
 
     @Transient
     private Map<Integer, Integer> medicineCountByBoxNumber = new HashMap<>();
@@ -165,8 +166,8 @@ public class Medicine {
         return displayName;
     }
     public void setDisplayName(String displayName) {
-        this.displayName = displayName;
-        setName(StringUtility.normalizeString(displayName));
+        this.displayName = ThpUtility.normalizeStringForDisplaying(displayName);
+        setName(ThpUtility.normalizeString(displayName));
     }
 
     public String getCompanyDisplayName() {
@@ -174,8 +175,16 @@ public class Medicine {
     }
 
     public void setCompanyDisplayName(String companyDisplayName) {
-        this.companyDisplayName = companyDisplayName;
-        setCompanyStringName(StringUtility.normalizeString(companyDisplayName));
+        this.companyDisplayName = ThpUtility.normalizeStringForDisplaying(companyDisplayName);
+        setCompanyStringName(ThpUtility.normalizeString(companyDisplayName));
+    }
+
+    public int getMedicineInTheBox() {
+        return medicineInTheBox;
+    }
+
+    public void setMedicineInTheBox(int medicineInTheBox) {
+        this.medicineInTheBox = medicineInTheBox;
     }
 
     @Override
