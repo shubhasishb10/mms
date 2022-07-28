@@ -18,10 +18,11 @@ import org.thymeleaf.util.StringUtils;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.IntStream;
 
 @Controller
-@RequestMapping("/mvc/medicine")
+@RequestMapping({"/mvc/medicine", "/"})
 public class MedicineMvcController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MedicineMvcController.class);
@@ -29,6 +30,11 @@ public class MedicineMvcController {
 
     @Autowired
     private MedicineService service;
+
+    @GetMapping
+    public String handleRootPageRequest(){
+        return "redirect:/mvc/medicine/list";
+    }
 
     @GetMapping("/list")
     public String getMedicineList(Model model, @RequestParam(value = "pageNo", defaultValue = "0") int pageNo) {
@@ -126,5 +132,14 @@ public class MedicineMvcController {
             service.saveFile(file);
         }
         return "redirect:/mvc/medicine/list";
+    }
+
+    @GetMapping("/order/census")
+    public String loadPageForMedicineCensus(Model model){
+        Map<String, List<Medicine>> medicineEntries = service.getMedicineListForCensus();
+        model.addAttribute("medicineEntry", medicineEntries);
+        model.addAttribute("headerText", "MEDICINE CENSUS");
+        model.addAttribute("isSearchResult", false);
+        return WebPages.MEDICINE_CENSUS.toString();
     }
 }

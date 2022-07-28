@@ -7,6 +7,7 @@ public enum WebPages {
     SEARCH_MEDICINE("search_medicine"),
     UPLOAD_FILE("upload_file"),
     BOX_LIST("box_list"),
+    MEDICINE_CENSUS("medicine_census"),
     INDEX("index");
     final String pageName;
     WebPages(String pageName) {

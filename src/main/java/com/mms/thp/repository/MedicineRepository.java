@@ -1,6 +1,8 @@
 package com.mms.thp.repository;
 
 import com.mms.thp.model.Medicine;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +17,8 @@ public interface MedicineRepository extends JpaRepository<Medicine, Long>, Medic
     List<Medicine> findMedicineByNameStartingWith(String name);
     //List<Medicine> findMedicineByBoxNumber(int boxNumber);
     Medicine findMedicineByNameAndCompanyStringNameAndVolume(String name, String company, int volume);
+
+    Page<Medicine> findAllByOrderByNameAsc(Pageable pageable);
+
+    List<Medicine> findAllByOrderByNameAsc();
 }

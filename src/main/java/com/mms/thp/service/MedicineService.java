@@ -5,6 +5,7 @@ import com.mms.thp.model.Medicine;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Map;
 
 public interface MedicineService {
 
@@ -40,6 +41,9 @@ public interface MedicineService {
     long getTotalMedicineCount();
 
     void saveFile(MultipartFile file);
+
+    Map<String, List<Medicine>> getMedicineListForCensus();
+
     void loadMedicineRecordFromFile(String fileName);
 
     List<Medicine> populateBoxesFieldAndTotalCountApi(List<Medicine> medicines);

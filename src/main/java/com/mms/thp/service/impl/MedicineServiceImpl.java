@@ -28,10 +28,13 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
+import org.thymeleaf.expression.Maps;
 
 import java.io.IOException;
 import java.time.Instant;
+import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -39,6 +42,7 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toMap;
 
 @Service
@@ -267,7 +271,7 @@ public class MedicineServiceImpl implements MedicineService {
         LOGGER.info("{}|Start of(findAllMedicine)|Params: pageNumber={}, recordPerPage={}", CLASS_TYPE, pageNumber, recordPerPage);
         try{
             PageRequest request = PageRequest.of(pageNumber, recordPerPage);
-            List<Medicine> medicines = medicineRepository.findAll(request).getContent();
+            List<Medicine> medicines = medicineRepository.findAllByOrderByNameAsc(request).getContent();
             LOGGER.info("Got the medicine lis and populating the transient field in the medicine");
             return populateBoxesFieldAndTotalCount(medicines);
         }catch(Exception e) {
@@ -374,6 +378,20 @@ public class MedicineServiceImpl implements MedicineService {
         theMedicine.setBoxNumber(boxNumber);
 
         return theMedicine;
+    }
+
+    @Override
+    public Map<String, List<Medicine>> getMedicineListForCensus(){
+        Map<String, List<Medicine>> medicineMapLetterWise = new HashMap<>();
+        try {
+            List<Medicine> medicines = medicineRepository.findAllByOrderByNameAsc();
+            populateBoxesFieldAndTotalCount(medicines);
+            medicineMapLetterWise = medicines.stream().collect(groupingBy(v->String.valueOf(v.getName().charAt(0)).toUpperCase()));
+
+        }catch(Exception e) {
+            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e);
+        }
+        return medicineMapLetterWise;
     }
 
     @Override
