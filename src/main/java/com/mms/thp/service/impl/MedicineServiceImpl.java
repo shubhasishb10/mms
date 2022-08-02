@@ -296,6 +296,26 @@ public class MedicineServiceImpl implements MedicineService {
     }
 
     @Override
+    public void changeMedicineName(final long oldMedicineId, final String newMedicineName) {
+        Optional<Medicine> oldMedicine = medicineRepository.findById(oldMedicineId);
+        if(oldMedicine.isPresent()) {
+            Medicine oldMedicineTemp = oldMedicine.get();
+            oldMedicineTemp.getMedicineBoxes().forEach(medicineBox -> {
+                Medicine newMedicine = new Medicine();
+                newMedicine.setDisplayName(newMedicineName);
+                newMedicine.setCompanyDisplayName(oldMedicineTemp.getCompanyDisplayName());
+                newMedicine.setBoxNumber(medicineBox.getBox().getNumber());
+                newMedicine.setVolume(oldMedicineTemp.getVolume());
+                newMedicine.setPrice(oldMedicineTemp.getPrice());
+                newMedicine.setCount(medicineBox.getMedicineCount());
+                medicineBoxRepository.deleteMedicineBoxesById(medicineBox.getMedicineBoxId());
+                addMedicine(newMedicine);
+            });
+            medicineRepository.deleteMedicineById(oldMedicineId);
+        }
+    }
+
+    @Override
     public List<Medicine> searchMedicine(String name, String company, int ml) {
 
         LOGGER.info("{}|Start of(searchMedicine)|Params: name={}, company={}, ml={}", CLASS_TYPE, name, company, ml);
@@ -303,9 +323,9 @@ public class MedicineServiceImpl implements MedicineService {
             LOGGER.info("Creating search criteria");
             SearchCriteria.SearchCriteriaBuilder builder = SearchCriteria.builder();
             if(!"".equalsIgnoreCase(name))
-                builder.withMedicineName(ThpUtility.normalizeString(name));
+                builder.withMedicineName(name);
             if(!"".equalsIgnoreCase(company))
-                builder.withCompanyName(ThpUtility.normalizeString(company));
+                builder.withCompanyName(company);
             if(0 != ml)
                 builder.withMedicineVolume(ml);
             LOGGER.info("Searching medicine db with search criteria={}", builder.buildDto());

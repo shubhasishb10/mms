@@ -87,7 +87,7 @@ public class MedicineMvcController {
                                    @RequestParam(value = "ml", required = false, defaultValue = "0") String ml, Model model,
                                    @RequestParam(value = "pageNo", defaultValue = "0") int pageNo){
 
-        if(StringUtils.isEmpty(name) && StringUtils.isEmpty(company)){
+        if(StringUtils.isEmpty(name) && StringUtils.isEmpty(company) && StringUtils.isEmpty(ml)){
             return "redirect:/mvc/medicine/list";
         }
         LOGGER.info("{}|Start of(loadSearchResult)|Params: name={}, company={}, ml={}|", CLASS_TYPE, name, company, ml);
@@ -141,5 +141,13 @@ public class MedicineMvcController {
         model.addAttribute("headerText", "MEDICINE CENSUS");
         model.addAttribute("isSearchResult", false);
         return WebPages.MEDICINE_CENSUS.toString();
+    }
+
+    @PostMapping("/name/change/{medicineId}")
+    public String modifyMedicineName(@PathVariable("medicineId") long medicineId, @RequestParam("medicineNewName") String medicineName) {
+        service.changeMedicineName(medicineId, medicineName);
+        System.out.println(medicineId);
+        System.out.println(medicineName);
+        return "redirect:/mvc/medicine/list";
     }
 }

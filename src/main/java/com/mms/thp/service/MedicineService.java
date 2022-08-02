@@ -36,6 +36,8 @@ public interface MedicineService {
 
     List<Medicine> findAllMedicine(int pageNumber, int recordPerPage);
 
+    void changeMedicineName(long oldMedicineId, String newMedicineName);
+
     List<Medicine> searchMedicine(String name, String company, int ml);
 
     long getTotalMedicineCount();

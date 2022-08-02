@@ -24,7 +24,7 @@ public class Company implements Serializable {
     private String name;
     private String contactPerson;
     private String mobileNumber;
-    @OneToMany(targetEntity = Medicine.class,cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    @OneToMany(targetEntity = Medicine.class,cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
     @JoinColumn(name = "companyId", referencedColumnName = "companyId")
     private List<Medicine> medicines = new ArrayList<>();
     public long getCompanyId() {

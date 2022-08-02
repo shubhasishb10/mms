@@ -4,6 +4,8 @@ import com.mms.thp.model.Medicine;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -21,4 +23,7 @@ public interface MedicineRepository extends JpaRepository<Medicine, Long>, Medic
     Page<Medicine> findAllByOrderByNameAsc(Pageable pageable);
 
     List<Medicine> findAllByOrderByNameAsc();
+    @Modifying
+    @Query(value = "delete from medicine where medicineId = :id", nativeQuery = true)
+    void deleteMedicineById(long id);
 }

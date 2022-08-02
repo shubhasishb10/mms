@@ -1,5 +1,7 @@
 package com.mms.thp.dto;
 
+import com.mms.thp.utility.ThpUtility;
+
 public class SearchCriteria {
 
     private String medicineName;
@@ -29,18 +31,19 @@ public class SearchCriteria {
         private String medicineName;
         private String companyName;
         private int medicineVolume;
-        private SearchCriteriaBuilder(){/*Private Constructor*/}
-        public SearchCriteriaBuilder withMedicineName(String medicineName) {
-            this.medicineName = medicineName;
-            return this;
+        private SearchCriteriaBuilder(){
+            this.medicineName = "";
+            this.companyName = "";
+            this.medicineVolume = 0;
         }
-        public SearchCriteriaBuilder withCompanyName(String companyName) {
-            this.companyName = companyName;
-            return this;
+        public void withMedicineName(String medicineName) {
+            this.medicineName = ThpUtility.normalizeString(medicineName);
         }
-        public SearchCriteriaBuilder withMedicineVolume(int medicineVolume){
+        public void withCompanyName(String companyName) {
+            this.companyName = ThpUtility.normalizeString(companyName);
+        }
+        public void withMedicineVolume(int medicineVolume){
             this.medicineVolume = medicineVolume;
-            return this;
         }
         public SearchCriteria buildDto(){
             SearchCriteria criteria = new SearchCriteria();
@@ -53,4 +56,19 @@ public class SearchCriteria {
             return criteria;
         }
     }
+
+    public static boolean hasPreviousParam(SearchCriteria criteria, String nextParamName){
+
+        switch(nextParamName) {
+            case PARAM_NAME_COMPANY:
+                return criteria.medicineName != null && !criteria.medicineName.equalsIgnoreCase("");
+            case PARAM_NAME_ML:
+                return (criteria.companyName != null && !criteria.companyName.equalsIgnoreCase(""))
+                        || (criteria.medicineName != null && !criteria.medicineName.equalsIgnoreCase(""));
+        }
+        return Boolean.FALSE;
+    }
+
+    public static final String PARAM_NAME_COMPANY = "COMPANY";
+    public static final String PARAM_NAME_ML = "ML";
 }
