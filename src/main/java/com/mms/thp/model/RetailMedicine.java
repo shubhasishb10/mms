@@ -21,6 +21,10 @@ public class RetailMedicine {
     @JoinColumn(name = "medicineId", referencedColumnName = "medicineId")
     private Medicine medicine;
 
+    @OneToOne
+    @JoinColumn(name = "boxId", referencedColumnName = "boxId")
+    private Box box;
+
     public long getRetailMedicineId() {
         return retailMedicineId;
     }
@@ -43,5 +47,13 @@ public class RetailMedicine {
 
     public void setMedicine(Medicine medicine) {
         this.medicine = medicine;
+    }
+
+    public Box getBox() {
+        return box;
+    }
+
+    public void setBox(Box box) {
+        this.box = box;
     }
 }

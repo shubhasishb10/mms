@@ -128,7 +128,7 @@ public class Medicine {
     }
 
     public void setBoxes(String boxes) {
-        this.boxes = boxes;
+        this.boxes = boxes.toUpperCase();
     }
 
     public Map<Integer, Integer> getMedicineCountByBoxNumber() {

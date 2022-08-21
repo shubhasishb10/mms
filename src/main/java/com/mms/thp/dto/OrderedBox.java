@@ -14,7 +14,7 @@ public class OrderedBox {
     }
 
     public void setBoxNumber(String boxNumber) {
-        this.boxNumber = boxNumber;
+        this.boxNumber = boxNumber.toLowerCase();
     }
 
     public int getMedicineCount() {

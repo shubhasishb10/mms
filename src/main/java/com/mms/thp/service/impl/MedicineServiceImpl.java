@@ -13,6 +13,7 @@ import com.mms.thp.repository.BoxRepository;
 import com.mms.thp.repository.CompanyRepository;
 import com.mms.thp.repository.MedicineBoxRepository;
 import com.mms.thp.repository.MedicineRepository;
+import com.mms.thp.repository.RetailMedicineRepository;
 import com.mms.thp.repository.RetailRepository;
 import com.mms.thp.service.MedicineService;
 import com.mms.thp.utility.ThpUtility;
@@ -25,20 +26,22 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import org.thymeleaf.expression.Maps;
+import org.thymeleaf.util.StringUtils;
 
 import java.io.IOException;
 import java.time.Instant;
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -52,8 +55,8 @@ public class MedicineServiceImpl implements MedicineService {
     private static final Logger LOGGER = LoggerFactory.getLogger(MedicineServiceImpl.class);
     private static final String CLASS_TYPE = "SERVICE";
 
-    private static final String DUMMY_CUSTOMER_NAME = "DUMMY_CUSTOMER_NAME";
-    private static final String DUMMY_CUSTOMER_ADDRESS = "DUMMY_CUSTOMER_ADDRESS";
+    private static final String DUMMY_CUSTOMER_NAME = "N/A";
+    private static final String DUMMY_CUSTOMER_ADDRESS = "N/A";
 
     private final MedicineRepository medicineRepository;
     private BoxRepository boxRepository;
@@ -63,6 +66,7 @@ public class MedicineServiceImpl implements MedicineService {
     private CompanyRepository companyRepository;
 
     private RetailRepository retailRepository;
+    private RetailMedicineRepository retailMedicineRepository;
 
     @Autowired
     MedicineServiceImpl(MedicineRepository medicineRepository) {
@@ -207,9 +211,11 @@ public class MedicineServiceImpl implements MedicineService {
             if(retailMedicine.isPresent()) {
                 retailMedicineReturn = retailMedicine;
                 LOGGER.info("Medicine present in the db medicine=" + retailMedicine.get());
+                String customerName = StringUtils.isEmpty(medicineOrder.getCustomerName()) ? DUMMY_CUSTOMER_NAME : medicineOrder.getCustomerName();
+                String customerAddress = StringUtils.isEmpty(medicineOrder.getCustomerAddress()) ? DUMMY_CUSTOMER_ADDRESS : medicineOrder.getCustomerAddress();
                 medicineOrder.getBoxes().stream().filter(OrderedBox.MEDICINE_COUNT_NOT_EMPTY).forEach( b -> {
                     LOGGER.info("Selling medicineCount {} from the box {}", b.getMedicineCount(), b.getBoxNumber());
-                    Box retailBox = boxRepository.findByNumber(b.getBoxNumber());
+                    Box retailBox = boxRepository.findByNumber(b.getBoxNumber().toLowerCase());
                     if(null != retailBox) {
                         LOGGER.info("Box present in the db, theBox={}", retailBox);
                         MedicineBoxes medicineBoxes = medicineBoxRepository.findMedicineBoxesByMedicineAndBox(retailMedicine.get(), retailBox);
@@ -220,12 +226,12 @@ public class MedicineServiceImpl implements MedicineService {
                             }
                             else if(b.getMedicineCount() == medicineBoxes.getMedicineCount()) {
                                 LOGGER.info("Requested medicine count is equal to the medicine present in the box, deleting the medicineBox entry");
-                                populateRetailEntity(retailMedicine.get(), b);
+                                populateRetailEntity(retailMedicine.get(), b, customerName, customerAddress);
                                 medicineBoxRepository.delete(medicineBoxes);
                             }else {
                                 LOGGER.info("Adjusting the medicine count in the box, new MedicineCount={}", medicineBoxes.getMedicineCount() - b.getMedicineCount());
                                 medicineBoxes.setMedicineCount(medicineBoxes.getMedicineCount() - b.getMedicineCount());
-                                populateRetailEntity(retailMedicine.get(), b);
+                                populateRetailEntity(retailMedicine.get(), b, customerName, customerAddress);
                                 medicineBoxRepository.save(medicineBoxes);
                             }
                         }else {
@@ -246,20 +252,24 @@ public class MedicineServiceImpl implements MedicineService {
         return retailMedicineReturn.get();
     }
 
-    private void populateRetailEntity(Medicine medicine, OrderedBox orderedBox) {
+    private void populateRetailEntity(Medicine medicine, OrderedBox orderedBox, String customerName, String customerAddress) {
         LOGGER.info("{}|Start of(populateRetailEntity)|Params: medicine={}, orderedBox={}", CLASS_TYPE, medicine, orderedBox);
         try{
-            LOGGER.info("Creating retail information");
-            Retail retail = new Retail();
-            RetailMedicine retailMedicine = new RetailMedicine();
-            retailMedicine.setMedicine(medicine);
-            retailMedicine.setRetailCount(orderedBox.getMedicineCount());
-            retail.getRetailMedicines().add(retailMedicine);
-            retail.setCustomerAddress(DUMMY_CUSTOMER_ADDRESS);
-            retail.setCustomerName(DUMMY_CUSTOMER_NAME);
-            retail.setRetailDate(Date.from(Instant.now()));
-            retailRepository.save(retail);
-            LOGGER.info("Retail information saved to db");
+            Box retailFromBox = boxRepository.findByNumber(orderedBox.getBoxNumber());
+            if(retailFromBox != null) {
+                LOGGER.info("Creating retail information");
+                Retail retail = new Retail();
+                RetailMedicine retailMedicine = new RetailMedicine();
+                retailMedicine.setMedicine(medicine);
+                retailMedicine.setRetailCount(orderedBox.getMedicineCount());
+                retailMedicine.setBox(retailFromBox);
+                retail.getRetailMedicines().add(retailMedicine);
+                retail.setCustomerAddress(customerAddress);
+                retail.setCustomerName(customerName);
+                retail.setRetailDate(Date.from(Instant.now()));
+                retailRepository.save(retail);
+                LOGGER.info("Retail information saved to db");
+            }
         }catch(Exception e) {
             LOGGER.error("error in populateRetailEntity: {} {}, exception={}", medicine, orderedBox, e);
         }
@@ -286,7 +296,7 @@ public class MedicineServiceImpl implements MedicineService {
                 .collect(toMap(Function.identity(),  e -> e.getMedicineBoxes().stream().map(m->m.getBox().getNumber()).collect(Collectors.toList())));
         Map<Medicine, Integer> totalMedicineCountMap = medicines.stream().filter(m->m.getMedicineBoxes().size() > 0)
                 .collect(toMap(Function.identity(),  e -> e.getMedicineBoxes().stream().map(MedicineBoxes::getMedicineCount).reduce(Integer::sum).get()));
-        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->m.setBoxes(medicineOnBoxes.get(m).stream().map(String::valueOf).collect(Collectors.joining(","))));
+        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->m.setBoxes(medicineOnBoxes.get(m).stream().map(String::valueOf).collect(Collectors.joining(",  "))));
         medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->m.setTotalMedicinePresent(totalMedicineCountMap.get(m)));
         return medicines;
     }
@@ -297,9 +307,12 @@ public class MedicineServiceImpl implements MedicineService {
 
     @Override
     public void changeMedicineName(final long oldMedicineId, final String newMedicineName) {
+        LOGGER.info("{}|Start of(changeMedicineName)|Params: oldMedicineId={}, newMedicineName={}", CLASS_TYPE, oldMedicineId, newMedicineName);
         Optional<Medicine> oldMedicine = medicineRepository.findById(oldMedicineId);
+        List<Medicine> medicineForChangeRetailId = new ArrayList<>(1);
         if(oldMedicine.isPresent()) {
             Medicine oldMedicineTemp = oldMedicine.get();
+            LOGGER.info("Got the medicine with the id = {}, medicine={}", oldMedicineTemp.getMedicineId(), oldMedicineTemp.getDisplayName());
             oldMedicineTemp.getMedicineBoxes().forEach(medicineBox -> {
                 Medicine newMedicine = new Medicine();
                 newMedicine.setDisplayName(newMedicineName);
@@ -309,10 +322,20 @@ public class MedicineServiceImpl implements MedicineService {
                 newMedicine.setPrice(oldMedicineTemp.getPrice());
                 newMedicine.setCount(medicineBox.getMedicineCount());
                 medicineBoxRepository.deleteMedicineBoxesById(medicineBox.getMedicineBoxId());
-                addMedicine(newMedicine);
+                Medicine tempMedicine = addMedicine(newMedicine);
+                if(medicineForChangeRetailId.size() <= 0) {
+                    medicineForChangeRetailId.add(tempMedicine);
+                }
             });
+            LOGGER.info("Changed the medicineName of {} with id={} to new medicine name={} of id={}", oldMedicineTemp.getDisplayName(),
+                    oldMedicineId,  medicineForChangeRetailId.isEmpty() ? null : medicineForChangeRetailId.get(0).getDisplayName(),
+                    medicineForChangeRetailId.isEmpty() ? null : medicineForChangeRetailId.get(0).getMedicineId());
             medicineRepository.deleteMedicineById(oldMedicineId);
+            LOGGER.info("Updating the retail_medicine table to update the deleted medicine id from id={} to new id={}",
+                    oldMedicineId, medicineForChangeRetailId.isEmpty() ? null : medicineForChangeRetailId.get(0).getMedicineId());
+            retailMedicineRepository.updateMedicineIdOfDeletedMedicine(medicineForChangeRetailId.get(0).getMedicineId(), oldMedicineId);
         }
+        LOGGER.info("{}|End of(changeMedicineName)|", CLASS_TYPE);
     }
 
     @Override
@@ -414,6 +437,46 @@ public class MedicineServiceImpl implements MedicineService {
         return medicineMapLetterWise;
     }
 
+    /*public long getTotalMotherMedicineCount(){
+        return medicineRepository.findMedicineByNameEndsWithOrderByNameAsc("mother").size();
+    }*/
+
+    @Override
+    public List<Medicine> findAllMotherMedicineByFirstLetter(String firstLetter) {
+        List<Medicine> medicineList = medicineRepository.findMedicineByNameEndsWithAndNameStartsWithOrderByNameAsc("mother", firstLetter);
+        return populateBoxesFieldAndTotalCount(medicineList);
+    }
+
+    @Override
+    public List<String> getAllMotherMedicineFirstLetter(){
+        return medicineRepository.findMedicineByNameEndsWithOrderByNameAsc("mother").stream().map(m->String.valueOf(m.getDisplayName().charAt(0))).map(String::toUpperCase).distinct().collect(Collectors.toList());
+    }
+
+    @Override
+    public List<String> getAllMedicineFirstLetter(){
+        return medicineRepository.findAllByOrderByNameAsc().stream().map( m-> String.valueOf(m.getName().charAt(0))).distinct().map(String::toUpperCase).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Medicine> getMedicineByFirstLetter(String letter) {
+        return populateBoxesFieldAndTotalCount(medicineRepository.findMedicinesByFirstLetter(ThpUtility.normalizeString(letter)));
+    }
+
+    @Override
+    public List<String> findAvailableMedicinesVolumes(){
+        return medicineRepository.findAvailableMedicinesVolumes();
+    }
+
+    @Override
+    public int totalMedicineCountOfVolume(int volume) {
+        return medicineRepository.findMedicineCountOfVolume(volume);
+    }
+    @Override
+    public List<Medicine> findAllMedicineOfVolume(int volume, int pageNo, int recordPerPage) {
+        Pageable pageRequest = PageRequest.of(pageNo, recordPerPage);
+        return populateBoxesFieldAndTotalCount(medicineRepository.findAllMedicineOfVolume(volume, pageRequest).getContent());
+    }
+
     @Override
     public void loadMedicineRecordFromFile(String fileName) {
         // Load the file
@@ -438,5 +501,9 @@ public class MedicineServiceImpl implements MedicineService {
     @Autowired
     public void setRetailRepository(RetailRepository retailRepository) {
         this.retailRepository = retailRepository;
+    }
+    @Autowired
+    public void setRetailMedicineRepository(RetailMedicineRepository retailMedicineRepository) {
+        this.retailMedicineRepository = retailMedicineRepository;
     }
 }

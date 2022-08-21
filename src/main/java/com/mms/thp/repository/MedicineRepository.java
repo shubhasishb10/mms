@@ -26,4 +26,14 @@ public interface MedicineRepository extends JpaRepository<Medicine, Long>, Medic
     @Modifying
     @Query(value = "delete from medicine where medicineId = :id", nativeQuery = true)
     void deleteMedicineById(long id);
+
+    @Query("select distinct(m.volume) from Medicine m order by m.volume asc")
+    List<String> findAvailableMedicinesVolumes();
+    @Query("select count(m) from Medicine m where m.volume = :volume")
+    int findMedicineCountOfVolume(int volume);
+
+    @Query("select m from Medicine m where m.volume = :volume order by m.name asc")
+    Page<Medicine> findAllMedicineOfVolume(int volume, Pageable pageable);
+    List<Medicine> findMedicineByNameEndsWithAndNameStartsWithOrderByNameAsc(String end, String start);
+    List<Medicine> findMedicineByNameEndsWithOrderByNameAsc(String str);
 }

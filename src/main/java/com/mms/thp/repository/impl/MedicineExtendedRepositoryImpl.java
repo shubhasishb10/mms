@@ -17,6 +17,7 @@ public class MedicineExtendedRepositoryImpl implements MedicineExtendedRepositor
     private static final String WHERE_COMPANY_CLAUSE = " m.companyStringName like :companyStringName ";
     private static final String WHERE_VOLUME_CLAUSE = " m.volume = :volume";
     private static final String SORT_MEDICINE_ASC_QUERY = " order by m.name asc";
+    private static final String GET_MEDICINE_BY_LETTER_QUERY = "select m from Medicine m where m.name like :name order by name asc";
 
     private static final String NAME_PARAM = "name";
     private static final String COMPANY_PARAM = "companyStringName";
@@ -56,6 +57,13 @@ public class MedicineExtendedRepositoryImpl implements MedicineExtendedRepositor
         if(hasMedicineVolumeInCriteria)
             medicineListQuery.setParameter(VOLUME_PARAM, criteria.getMedicineVolume());
         return medicineListQuery.getResultList();
+    }
+
+    @Override
+    public List<Medicine> findMedicinesByFirstLetter(String firstLetter) {
+        TypedQuery<Medicine> medicineByFirstLetterQuery = entityManager.createQuery(GET_MEDICINE_BY_LETTER_QUERY, Medicine.class);
+        medicineByFirstLetterQuery.setParameter(NAME_PARAM, firstLetter+"%");
+        return medicineByFirstLetterQuery.getResultList();
     }
 
     @PersistenceContext

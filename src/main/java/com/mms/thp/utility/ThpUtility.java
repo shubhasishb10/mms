@@ -6,6 +6,7 @@ public class ThpUtility {
 
     public static final String ADMIN_KEY = "NO-ONE-CAN-CHANGE";
     public static final int RECORD_PER_PAGE = 15;
+    public static final int RECORD_PER_PAGE_SELL_REPORT = 7;
     private static final String TOTAL_PAGES_ATTR_NAME = "totalPages";
     private static final String NEXT_PAGE_LINK_ATTR_NAME = "nextPageLink";
     private static final String PREVIOUS_PAGE_LINK_ATTR_NAME = "previousPageLink";
@@ -21,10 +22,10 @@ public class ThpUtility {
     public static String normalizeStringForDisplaying(String arg) {
         return arg.trim().toUpperCase();
     }
-    public static void populateModelForPagination(Model model, long totalMedicineCount, int pageNo, String url){
+    public static void populateModelForPagination(Model model, long totalEntries, int pageNo, String url, int recordPerPage){
 
-        double totalPages = (double)totalMedicineCount/RECORD_PER_PAGE;
-        int totalIntCount = (int)totalMedicineCount/RECORD_PER_PAGE;
+        double totalPages = (double)totalEntries/recordPerPage;
+        int totalIntCount = (int)totalEntries/recordPerPage;
         if(totalPages > totalIntCount)
             totalPages+=1;
         boolean hasNextPage = false;

@@ -42,7 +42,7 @@ public class BoxMvcController {
         model.addAttribute("isSearchResult", true);
         model.addAttribute("medicineList", medicines);
         model.addAttribute("boxNumber", boxNumber.toUpperCase());
-        ThpUtility.populateModelForPagination(model, totalCount, pageNo, "/mvc/box/medicines?selectedBox=" + boxNumber + "&");
+        ThpUtility.populateModelForPagination(model, totalCount, pageNo, "/mvc/box/medicines?selectedBox=" + boxNumber + "&", ThpUtility.RECORD_PER_PAGE);
         return WebPages.BOX_LIST.toString();
     }
 

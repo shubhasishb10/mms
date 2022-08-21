@@ -46,6 +46,20 @@ public interface MedicineService {
 
     Map<String, List<Medicine>> getMedicineListForCensus();
 
+    List<Medicine> findAllMotherMedicineByFirstLetter(String firstLetter);
+
+    List<String> getAllMotherMedicineFirstLetter();
+
+    List<String> getAllMedicineFirstLetter();
+
+    List<Medicine> getMedicineByFirstLetter(String letter);
+
+    List<String> findAvailableMedicinesVolumes();
+
+    int totalMedicineCountOfVolume(int volume);
+
+    List<Medicine> findAllMedicineOfVolume(int volume, int pageNo, int recordPerPage);
+
     void loadMedicineRecordFromFile(String fileName);
 
     List<Medicine> populateBoxesFieldAndTotalCountApi(List<Medicine> medicines);

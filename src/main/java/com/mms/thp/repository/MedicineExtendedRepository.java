@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface MedicineExtendedRepository {
     List<Medicine> searchMedicineByCriteria(SearchCriteria criteria);
+    List<Medicine> findMedicinesByFirstLetter(String firstLetter);
 }

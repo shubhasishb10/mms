@@ -9,6 +9,8 @@ import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.Banner;
+import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -45,16 +47,17 @@ public class MedicineMvcController {
         long totalMedicineCount = service.getTotalMedicineCount();
         model.addAttribute("headerText", "ALL MEDICINES");
         model.addAttribute("isSearchResult", false);
-        ThpUtility.populateModelForPagination(model, totalMedicineCount, pageNo, "/mvc/medicine/list?");
+        ThpUtility.populateModelForPagination(model, totalMedicineCount, pageNo, "/mvc/medicine/list?", ThpUtility.RECORD_PER_PAGE);
         LOGGER.info("{}|End of(getMedicineList)|", CLASS_TYPE);
         return WebPages.INDEX.toString();
     }
 
     @GetMapping("/{medicineId}")
-    public String loadMedicineDetailPage(@PathVariable("medicineId") long medicineId, Model model) {
+    public String loadMedicineDetailPage(@RequestHeader(value = HttpHeaders.REFERER, required = false) final String referer, @PathVariable("medicineId") long medicineId, Model model) {
         LOGGER.info("{}|Start of(loadMedicineDetailPage)|Params: medicineId={}|", CLASS_TYPE, medicineId);
         model.addAttribute("medicine", service.getMedicineById(medicineId));
         model.addAttribute("medicineOrder", new MedicineOrder());
+        model.addAttribute("referer", referer);
         LOGGER.info("{}|End of(loadMedicineDetailPage)|", CLASS_TYPE);
         return WebPages.MEDICINE_DETAIL.toString();
     }
@@ -95,7 +98,7 @@ public class MedicineMvcController {
         model.addAttribute("medicineList", resultMedicine);
         model.addAttribute("headerText", "SEARCH RESULT");
         model.addAttribute("isSearchResult", true);
-        ThpUtility.populateModelForPagination(model, resultMedicine.size(), ThpUtility.RECORD_PER_PAGE, "/mvc/medicine/list?");
+        ThpUtility.populateModelForPagination(model, resultMedicine.size(), ThpUtility.RECORD_PER_PAGE, "/mvc/medicine/list?", ThpUtility.RECORD_PER_PAGE);
         LOGGER.info("{}|End of(loadSearchPage)|", CLASS_TYPE);
         return WebPages.INDEX.toString();
     }
@@ -135,19 +138,67 @@ public class MedicineMvcController {
     }
 
     @GetMapping("/order/census")
-    public String loadPageForMedicineCensus(Model model){
-        Map<String, List<Medicine>> medicineEntries = service.getMedicineListForCensus();
-        model.addAttribute("medicineEntry", medicineEntries);
+    public String loadPageForMedicineCensus(Model model, @RequestParam(value = "inputLetter", defaultValue = "A") String inputLetter){
+        List<Medicine> medicineEntries = service.getMedicineByFirstLetter(inputLetter);
+        List<String> allLetters = service.getAllMedicineFirstLetter();
+        model.addAttribute("medicineList", medicineEntries);
         model.addAttribute("headerText", "MEDICINE CENSUS");
         model.addAttribute("isSearchResult", false);
+        model.addAttribute("selectedLetter", inputLetter);
+        model.addAttribute("allLetters", allLetters);
         return WebPages.MEDICINE_CENSUS.toString();
     }
 
     @PostMapping("/name/change/{medicineId}")
     public String modifyMedicineName(@PathVariable("medicineId") long medicineId, @RequestParam("medicineNewName") String medicineName) {
+        LOGGER.info("{}|Start of(modifyMedicineName)|Params: oldMedicineId={}, newMedicineName={}|", CLASS_TYPE, medicineId, medicineName);
         service.changeMedicineName(medicineId, medicineName);
-        System.out.println(medicineId);
-        System.out.println(medicineName);
+        LOGGER.info("{}|End of(modifyMedicineName)|", CLASS_TYPE);
         return "redirect:/mvc/medicine/list";
+    }
+
+    @GetMapping("/mls")
+    public String findMls(Model model) {
+        model.addAttribute("volumes", findAvailableVolumes());
+        model.addAttribute("isSearchResult", false);
+        return WebPages.ML_LIST.toString();
+    }
+
+    @GetMapping("/mls/medicines")
+    public String findMedicinesOfVolumes(Model model, @RequestParam("selectedVolume") String selectedVolume, @RequestParam(value = "pageNo", defaultValue = "0") int pageNo){
+        if(pageNo < 0)
+            pageNo = 0;
+        selectedVolume = selectedVolume.toLowerCase();
+        int medicineVolume;
+        try{
+            medicineVolume = Integer.parseInt(selectedVolume);
+        }catch(NumberFormatException e) {
+            return "redirect:/mvc/medicine/list";
+        }
+
+        int totalCount = service.totalMedicineCountOfVolume(medicineVolume);
+        List<Medicine> medicines = service.findAllMedicineOfVolume(medicineVolume, pageNo, ThpUtility.RECORD_PER_PAGE);
+        model.addAttribute("volumes", findAvailableVolumes());
+        model.addAttribute("isSearchResult", true);
+        model.addAttribute("medicineList", medicines);
+        model.addAttribute("selectedVolume", selectedVolume.toUpperCase());
+        ThpUtility.populateModelForPagination(model, totalCount, pageNo, "/mvc/medicine/mls/medicines?selectedVolume=" + selectedVolume + "&", ThpUtility.RECORD_PER_PAGE);
+        return WebPages.ML_LIST.toString();
+    }
+
+    @GetMapping("/mother")
+    public String loadMotherMedicines(Model model, @RequestParam(value = "inputLetter", defaultValue = "A") String inputLetter){
+        List<Medicine> medicineEntries = service.findAllMotherMedicineByFirstLetter(inputLetter);
+        List<String> allLetters = service.getAllMotherMedicineFirstLetter();
+        model.addAttribute("medicineList", medicineEntries);
+        model.addAttribute("headerText", "MOTHER");
+        model.addAttribute("isSearchResult", false);
+        model.addAttribute("selectedLetter", inputLetter);
+        model.addAttribute("allLetters", allLetters);
+        return WebPages.MOTHER_LIST.toString();
+    }
+
+    private List<String> findAvailableVolumes(){
+        return service.findAvailableMedicinesVolumes();
     }
 }

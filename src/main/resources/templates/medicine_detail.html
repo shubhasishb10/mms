@@ -21,7 +21,7 @@
     <br/>
     <div class="row"
          style="box-shadow:0px 0px 4px 0px;background-image: linear-gradient(to right, #edd0a8 , #f5bfcd, #f5f5c6, #b6f1fc);;padding:2px;">
-        <a class="btn btn-primary col-sm-1 col-xs-1 col-md-1" th:href="@{/mvc/medicine/list}">
+        <a class="btn btn-primary col-sm-1 col-xs-1 col-md-1" th:href="@{|${referer}|}">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-reply-fill"
                  viewBox="0 0 16 16">
                 <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
@@ -32,7 +32,7 @@
     <br/>
     <h3 style="color:#105e69" class="text-center"><b>MEDICINE DETAIL</b></h3>
     <br/>
-    <form style="box-shadow:0px 0px 2px 0px;padding:10px;border-radius:3px;" class="row g-3" action="#"
+    <form id="medicineOrderForm" style="box-shadow:0px 0px 2px 0px;padding:10px;border-radius:3px;" class="row g-3" action="#"
           th:action="@{/mvc/medicine/sell}" method="post" th:object="${medicineOrder}">
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="name" class="form-label"><b>NAME</b></label>
@@ -99,6 +99,10 @@
         <input id="00-1-id-src" type="hidden" th:value="${medicine.medicineId}"/>
         <!-- Hidden input to set the medicineId on MedicineOrder object  -->
         <input id="00-1-id-dest" type="hidden" th:field="*{medicineId}"/>
+
+        <input type="hidden" id="0001-1-cn-dest" th:field="*{customerName}" />
+        <input type="hidden" id="0001-1-ca-dest" th:field="*{customerAddress}" />
+
         <table class="table table-bordered">
             <tr class="table-primary">
                 <td><b>BOX NUMBER</b></td>
@@ -108,7 +112,7 @@
             <tr class="box-stock-details" th:each="medicineBox : ${medicine.medicineBoxes}">
                 <td class="text-center">
                     <input hidden th:field="*{boxes[__${medicineBoxStat.index}__].boxNumber}"/>
-                    <input disabled class="form-control" type="text" th:value="${medicineBox.box.number}"/>
+                    <input disabled class="form-control" type="text" th:value="${#strings.toUpperCase(medicineBox.box.number)}"/>
                 </td>
                 <td class="text-center" th:text="${medicineBox.medicineCount}"></td>
                 <td><input type="number" th:field="*{boxes[__${medicineBoxStat.index}__].medicineCount}"
@@ -116,12 +120,11 @@
             </tr>
         </table>
         <button id="submit_btn" th:disabled="${medicine.medicineBoxes.size() < 1}" class="btn btn-secondary"
-                type="submit"
-                onclick="return function_0_0_0_()">SELL
+                type="button" data-bs-toggle="modal" data-bs-target="#customerDetailsModal" onclick="return function_0_0_0_()">SELL
         </button>
     </form>
 </div>
-
+<div th:replace="/common/footer :: footer"></div>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -148,9 +151,43 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="customerDetailsModal" tabindex="-1" aria-labelledby="customerDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!--<form th:action="@{|name/change/${medicine.medicineId}|}" method="post">-->
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title text-center" id="customerDetailsModalLabel">CUSTOMER DETAILS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="customer-details-name-src" class="form-label"><b>NAME</b></label>
+                    <input id="customer-details-name-src" class="form-control" type="text" name="customerName"/>
+                    <br/>
+                    <label for="customer-details-address-src" class="form-label"><b>ADDRESS</b></label>
+                    <input id="customer-details-address-src" class="form-control" type="text" name="customerAddress"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="final-sell-submit-button" type="button" class="btn btn-primary" onclick="return _00_00_00_00_00()">
+                        SELL
+                    </button>
+                </div>
+            <!--</form>-->
+        </div>
+    </div>
+</div>
 </div>
 </body>
 <script>
+    function _00_00_00_00_00(){
+        var var0 = document.getElementById('customer-details-name-src').value;
+        var var1 = document.getElementById('customer-details-address-src').value;
+        document.getElementById('0001-1-cn-dest').value = var0;
+        document.getElementById('0001-1-ca-dest').value = var1;
+        document.getElementById('medicineOrderForm').submit();
+        return true;
+    }
     function function_0_0_0_() {
         var var0 = confirm('Are you sure you want to sell?');
         if(var0 == true){

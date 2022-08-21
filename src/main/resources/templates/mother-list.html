@@ -17,6 +17,7 @@
              z-index: 10000;
         }
 
+
     </style>
 </head>
 <body>
@@ -69,7 +70,7 @@
     <div class="row">
         <div class="col-sm-1 col-md-1 col-xs-1" th:each="letter : ${allLetters}">
             <a th:style="${selectedLetter==letter ? 'pointer-events: none;background-color:#aee5f2;font-weight:bold;border:1px solid #aee5f2;padding:10px;margin:5px;width:100%' : 'pointer-events: auto;font-weight:bold;padding:10px;margin:5px;width:100%'}"
-               onclick="_0_0()" class="btn btn-outline-info" th:text="${letter}" th:href="@{|/mvc/medicine/order/census?inputLetter=${letter}|}"></a>
+               onclick="_0_0()" class="btn btn-outline-info" th:text="${letter}" th:href="@{|/mvc/medicine/mother?inputLetter=${letter}|}"></a>
         </div>
     </div>
     <br/>
@@ -77,35 +78,34 @@
     <h3 style="color:#105e69;font-weight:bold" class="text-center" th:text="${headerText}"></h3>
     <br/>
     <!--<div id="medicine-census-section" th:each="entry : ${medicineEntry}">-->
-        <br/>
-        <p style="font-size:2em;margin-left:48%" class="text-center badge bg-danger align-middle" th:text="${selectedLetter}"></p>
     <br/>
-        <table style="box-shadow:0px 0px 2px 0px;border-radius:3px;" class="table table-bordered table-striped">
-            <tr class="table-info">
-                <td class="text-center"><b>NAME</b></td>
-                <td class="text-center"><b>TOTAL COUNT</b></td>
-                <td class="text-center"><b>COMPANY</b></td>
-                <td class="text-center"><b>PRICE</b></td>
-                <td class="text-center"><b>ML</b></td>
-                <td class="text-center"><b>BOX NUMBER</b></td>
-            </tr>
-            <tr th:each="medicine : ${medicineList}">
-                <td><a style="text-decoration:none" th:text="${medicine.displayName}"
-                       th:href="@{|/mvc/medicine/${medicine.medicineId}|}"/>&nbsp;&nbsp;
-                   <!-- <span th:if="${medicine.totalMedicinePresent} < 15 and ${medicine.totalMedicinePresent} >= 5"
-                          class="badge bg-warning" th:text="${medicine.totalMedicinePresent}"/>
-                    <span th:if="${medicine.totalMedicinePresent} >= 15" class="badge bg-success"
-                          th:text="${medicine.totalMedicinePresent}"/>
-                    <span th:if="${medicine.totalMedicinePresent} < 5" class="badge bg-danger"
-                          th:text="${medicine.totalMedicinePresent}"/>-->
-                </td>
-                <td class="text-center" th:text="${medicine.totalMedicinePresent}"></td>
-                <td class="text-center" th:text="${medicine.companyDisplayName}"></td>
-                <td class="text-center" th:text="${medicine.price}"></td>
-                <td class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
-                <td th:text="${#strings.toUpperCase(medicine.boxes)}"></td>
-            </tr>
-        </table>
+    <p style="font-size:2em;margin-left:48%" class="text-center badge bg-danger align-middle"
+       th:text="${selectedLetter}"></p>
+    <br/>
+    <table style="box-shadow:0px 0px 2px 0px;border-radius:3px;" class="table table-bordered table-striped">
+        <tr class="table-info">
+            <td class="text-center"><b>NAME</b></td>
+            <td class="text-center"><b>COMPANY</b></td>
+            <td class="text-center"><b>PRICE</b></td>
+            <td class="text-center"><b>ML</b></td>
+            <td class="text-center"><b>BOX NUMBER</b></td>
+        </tr>
+        <tr th:each="medicine : ${medicineList}">
+            <td><a style="text-decoration:none" th:text="${medicine.displayName}"
+                   th:href="@{|/mvc/medicine/${medicine.medicineId}|}"/>&nbsp;&nbsp;
+                <!-- <span th:if="${medicine.totalMedicinePresent} < 15 and ${medicine.totalMedicinePresent} >= 5"
+                       class="badge bg-warning" th:text="${medicine.totalMedicinePresent}"/>
+                 <span th:if="${medicine.totalMedicinePresent} >= 15" class="badge bg-success"
+                       th:text="${medicine.totalMedicinePresent}"/>
+                 <span th:if="${medicine.totalMedicinePresent} < 5" class="badge bg-danger"
+                       th:text="${medicine.totalMedicinePresent}"/>-->
+            </td>
+            <td class="text-center" th:text="${medicine.companyDisplayName}"></td>
+            <td class="text-center" th:text="${medicine.price}"></td>
+            <td class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
+            <td th:text="${#strings.toUpperCase(medicine.boxes)}"></td>
+        </tr>
+    </table>
     <!--</div>-->
     <!--<div class="row">
         <div class="col-md-4 col-xs-4 col-sm-4">
@@ -136,5 +136,6 @@
         var var0 = document.getElementById('loader');
         var0.style.display = 'block';
     }
+
 
 </script>
