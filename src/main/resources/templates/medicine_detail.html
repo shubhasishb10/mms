@@ -102,6 +102,7 @@
 
         <input type="hidden" id="0001-1-cn-dest" th:field="*{customerName}" />
         <input type="hidden" id="0001-1-ca-dest" th:field="*{customerAddress}" />
+        <input type="hidden" id="00011-1-dr" th:field="*{isDropRequest}" />
 
         <table class="table table-bordered">
             <tr class="table-primary">
@@ -119,9 +120,19 @@
                            class="form-control medicine_sell_input"/></td>
             </tr>
         </table>
-        <button id="submit_btn" th:disabled="${medicine.medicineBoxes.size() < 1}" class="btn btn-secondary"
-                type="button" data-bs-toggle="modal" data-bs-target="#customerDetailsModal" onclick="return function_0_0_0_()">SELL
-        </button>
+        <div class="row">
+            <div class="col-sm-4 col-xs-4 col-md-4"></div>
+            <div class="col-sm-3 col-xs-3 col-md-3">
+                <button style="align:right" id="submit_btn" th:disabled="${medicine.medicineBoxes.size() < 1}" class="btn btn-secondary"
+                        type="button" data-bs-toggle="modal" data-bs-target="#customerDetailsModal" onclick="return _0000_0000_0000()">SELL
+                </button>
+            </div>
+            <div class="col-sm-3 col-xs-3 col-md-3">
+                <button id="drop_btn" th:disabled="${medicine.medicineBoxes.size() < 1}" class="btn btn-secondary"
+                        type="button" data-bs-toggle="modal" data-bs-target="#customerDetailsModal" onclick="return _0000_1111_0000()">DELETE
+                </button>
+            </div>
+        </div>
     </form>
 </div>
 <div th:replace="/common/footer :: footer"></div>
@@ -180,7 +191,35 @@
 </div>
 </body>
 <script>
+    function _0000_0000_0000(){
+        document.getElementById('00011-1-dr').value = 'NODROP';
+        document.getElementById('00011-1-dr').value = false;
+        document.getElementById('customer-details-name-src').disabled = false;
+        document.getElementById('customer-details-address-src').disabled = false;
+        document.getElementById('final-sell-submit-button').innerHTML = 'SELL';
+        function_0_0_0_();
+    }
+    function _0000_1111_0000(){
+        document.getElementById('00011-1-dr').value = 'DROP';
+        document.getElementById('00011-1-dr').value = true;
+        document.getElementById('customer-details-name-src').disabled = true;
+        document.getElementById('customer-details-address-src').disabled = true;
+        document.getElementById('final-sell-submit-button').innerHTML = 'DELETE';
+        function_0_0_0_();
+    }
     function _00_00_00_00_00(){
+        /*var var000 = document.getElementById('00011-1-dr').value;
+        if(var000 === 'DROP'){
+            document.getElementById('00011-1-dr').value = true;
+            document.getElementById('customer-details-name-src').disabled = true;
+            document.getElementById('customer-details-address-src').disabled = true;
+            document.getElementById('final-sell-submit-button').innerHTML = 'DELETE';
+        }else{
+            document.getElementById('00011-1-dr').value = false;
+            document.getElementById('customer-details-name-src').disabled = false;
+            document.getElementById('customer-details-address-src').disabled = false;
+            document.getElementById('final-sell-submit-button').innerHTML = 'SELL';
+        }*/
         var var0 = document.getElementById('customer-details-name-src').value;
         var var1 = document.getElementById('customer-details-address-src').value;
         document.getElementById('0001-1-cn-dest').value = var0;
@@ -247,6 +286,7 @@
     }
     function function__0_0_1_1(var0_0_0){
         document.getElementById('submit_btn').disabled = var0_0_0;
+        document.getElementById('drop_btn').disabled = var0_0_0;
     }
     function function___0___0__0(var0){
         function__000_00_0().disabled = var0;

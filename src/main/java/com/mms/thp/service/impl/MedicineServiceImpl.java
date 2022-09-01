@@ -226,12 +226,14 @@ public class MedicineServiceImpl implements MedicineService {
                             }
                             else if(b.getMedicineCount() == medicineBoxes.getMedicineCount()) {
                                 LOGGER.info("Requested medicine count is equal to the medicine present in the box, deleting the medicineBox entry");
-                                populateRetailEntity(retailMedicine.get(), b, customerName, customerAddress);
+                                if(!medicineOrder.getIsDropRequest())
+                                    populateRetailEntity(retailMedicine.get(), b, customerName, customerAddress);
                                 medicineBoxRepository.delete(medicineBoxes);
                             }else {
                                 LOGGER.info("Adjusting the medicine count in the box, new MedicineCount={}", medicineBoxes.getMedicineCount() - b.getMedicineCount());
                                 medicineBoxes.setMedicineCount(medicineBoxes.getMedicineCount() - b.getMedicineCount());
-                                populateRetailEntity(retailMedicine.get(), b, customerName, customerAddress);
+                                if(!medicineOrder.getIsDropRequest())
+                                    populateRetailEntity(retailMedicine.get(), b, customerName, customerAddress);
                                 medicineBoxRepository.save(medicineBoxes);
                             }
                         }else {

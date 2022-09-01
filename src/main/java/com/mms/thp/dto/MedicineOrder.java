@@ -5,6 +5,7 @@ import java.util.List;
 
 public class MedicineOrder {
 
+    private boolean isDropRequest;
     private long medicineId;
     private String customerName;
     private String customerAddress;
@@ -40,6 +41,14 @@ public class MedicineOrder {
 
     public void setCustomerAddress(String customerAddress) {
         this.customerAddress = customerAddress;
+    }
+
+    public boolean getIsDropRequest() {
+        return isDropRequest;
+    }
+
+    public void setIsDropRequest(boolean dropRequest) {
+        isDropRequest = dropRequest;
     }
 
     @Override
