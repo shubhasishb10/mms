@@ -35,7 +35,7 @@ public class MedicineMvcController {
 
     @GetMapping
     public String handleRootPageRequest(){
-        return "redirect:/mvc/medicine/list";
+        return WebPages.REDIRECT_TO_LIST.toString();
     }
 
     @GetMapping("/list")
@@ -78,7 +78,7 @@ public class MedicineMvcController {
         }
         service.addMedicine(medicine);
         LOGGER.info("{}|End of(insertMedicine)|", CLASS_TYPE);
-        return "redirect:/mvc/medicine/list";
+        return WebPages.REDIRECT_TO_LIST.toString();
     }
     @GetMapping("/search")
     public String loadSearchPage() {
@@ -91,7 +91,7 @@ public class MedicineMvcController {
                                    @RequestParam(value = "pageNo", defaultValue = "0") int pageNo){
 
         if(StringUtils.isEmpty(name) && StringUtils.isEmpty(company) && StringUtils.isEmpty(ml)){
-            return "redirect:/mvc/medicine/list";
+            return WebPages.REDIRECT_TO_LIST.toString();
         }
         LOGGER.info("{}|Start of(loadSearchResult)|Params: name={}, company={}, ml={}|", CLASS_TYPE, name, company, ml);
         List<Medicine> resultMedicine = service.searchMedicine(name, company, Integer.parseInt(ml));
@@ -111,7 +111,7 @@ public class MedicineMvcController {
         }
         service.sellMedicine(medicineOrder);
         LOGGER.info("End of(sellMedicine)|");
-        return "redirect:/mvc/medicine/list";
+        return WebPages.REDIRECT_TO_LIST.toString();
     }
 
     @GetMapping("/update/{medicineId}")
@@ -134,7 +134,7 @@ public class MedicineMvcController {
         if(adminKey.equals(ThpUtility.ADMIN_KEY)) {
             service.saveFile(file);
         }
-        return "redirect:/mvc/medicine/list";
+        return WebPages.REDIRECT_TO_LIST.toString();
     }
 
     @GetMapping("/order/census")
@@ -154,7 +154,7 @@ public class MedicineMvcController {
         LOGGER.info("{}|Start of(modifyMedicineName)|Params: oldMedicineId={}, newMedicineName={}|", CLASS_TYPE, medicineId, medicineName);
         service.changeMedicineName(medicineId, medicineName);
         LOGGER.info("{}|End of(modifyMedicineName)|", CLASS_TYPE);
-        return "redirect:/mvc/medicine/list";
+        return WebPages.REDIRECT_TO_LIST.toString();
     }
 
     @GetMapping("/mls")
@@ -173,7 +173,7 @@ public class MedicineMvcController {
         try{
             medicineVolume = Integer.parseInt(selectedVolume);
         }catch(NumberFormatException e) {
-            return "redirect:/mvc/medicine/list";
+            return WebPages.REDIRECT_TO_LIST.toString();
         }
 
         int totalCount = service.totalMedicineCountOfVolume(medicineVolume);
