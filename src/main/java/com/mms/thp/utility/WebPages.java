@@ -11,6 +11,7 @@ public enum WebPages {
     SELL_REPORT("sell_report"),
     MOTHER_LIST("mother-list"),
     MEDICINE_CENSUS("medicine_census"),
+    REDIRECT_TO_LIST("redirect:/mvc/medicine/list"),
     INDEX("index");
     final String pageName;
     WebPages(String pageName) {
