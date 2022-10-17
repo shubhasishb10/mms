@@ -393,6 +393,7 @@ public class MedicineServiceImpl implements MedicineService {
         System.out.println("Testing");
     }
 
+    @SuppressWarnings("deprecated")
     private Medicine prepareMedicineObject(Row row) {
 
         Cell nameCell = row.getCell(ThpUtility.MedicineColumnIndex.NAME.ordinal());
