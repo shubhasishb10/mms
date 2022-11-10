@@ -1,6 +1,5 @@
 package com.mms.thp.utility;
 
-import com.mms.thp.model.Order;
 import org.springframework.ui.Model;
 
 public class ThpUtility {
@@ -15,8 +14,6 @@ public class ThpUtility {
     private static final String HAS_PREVIOUS_PAGE_ATTR_NAME = "hasPreviousPage";
     private static final String CURRENT_PAGE_ATTR_NAME = "currentPage";
     private static final String PAGE_NO_REQUEST_PARAM_NAME = "pageNo";
-
-    private static final String IS_PURCHASE_SESSION_ACTIVE = "isPurchaseSessionActive";
 
     private ThpUtility(){/* No constructor for utility class */}
     public static String normalizeString(String arg) {
@@ -59,7 +56,6 @@ public class ThpUtility {
         model.addAttribute(HAS_NEXT_PAGE_ATTR_NAME, hasNextPage);
         model.addAttribute(HAS_PREVIOUS_PAGE_ATTR_NAME, hasPreviousPage);
         model.addAttribute(CURRENT_PAGE_ATTR_NAME, currentPage);
-        model.addAttribute(IS_PURCHASE_SESSION_ACTIVE, Order.isPurchaseActive());
 
     }
     public enum MedicineColumnIndex {
