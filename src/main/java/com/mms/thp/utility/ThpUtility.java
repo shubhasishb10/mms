@@ -2,6 +2,9 @@ package com.mms.thp.utility;
 
 import org.springframework.ui.Model;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class ThpUtility {
 
     public static final String ADMIN_KEY = "NO-ONE-CAN-CHANGE";
@@ -14,6 +17,7 @@ public class ThpUtility {
     private static final String HAS_PREVIOUS_PAGE_ATTR_NAME = "hasPreviousPage";
     private static final String CURRENT_PAGE_ATTR_NAME = "currentPage";
     private static final String PAGE_NO_REQUEST_PARAM_NAME = "pageNo";
+    private static final String TOTAL_PAGES_NUMBERS = "totalPageArray";
 
     private ThpUtility(){/* No constructor for utility class */}
     public static String normalizeString(String arg) {
@@ -56,7 +60,7 @@ public class ThpUtility {
         model.addAttribute(HAS_NEXT_PAGE_ATTR_NAME, hasNextPage);
         model.addAttribute(HAS_PREVIOUS_PAGE_ATTR_NAME, hasPreviousPage);
         model.addAttribute(CURRENT_PAGE_ATTR_NAME, currentPage);
-
+        model.addAttribute(TOTAL_PAGES_NUMBERS, IntStream.range(1, (int)totalPages + 1).boxed().collect(Collectors.toList()));
     }
     public enum MedicineColumnIndex {
         NAME,

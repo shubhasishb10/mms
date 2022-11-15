@@ -123,13 +123,14 @@
         <div class="row">
             <div class="col-sm-4 col-xs-4 col-md-4"></div>
             <div class="col-sm-3 col-xs-3 col-md-3">
+                <!-- data-bs-toggle="modal" data-bs-target="#customerDetailsModal"  -->
                 <button style="align:right" id="submit_btn" th:disabled="${medicine.medicineBoxes.size() < 1}" class="btn btn-secondary"
-                        type="button" data-bs-toggle="modal" data-bs-target="#customerDetailsModal" onclick="return _0000_0000_0000()">SELL
+                        type="button" onclick="return _0000_0000_0000()">SELL
                 </button>
             </div>
             <div class="col-sm-3 col-xs-3 col-md-3">
                 <button id="drop_btn" th:disabled="${medicine.medicineBoxes.size() < 1}" class="btn btn-secondary"
-                        type="button" data-bs-toggle="modal" data-bs-target="#customerDetailsModal" onclick="return _0000_1111_0000()">DELETE
+                        type="button" onclick="return _0000_1111_0000()">DELETE
                 </button>
             </div>
         </div>
@@ -191,21 +192,21 @@
 </div>
 </body>
 <script>
-    function _0000_0000_0000(){
+    function _0000_0000_0000(var0){
         document.getElementById('00011-1-dr').value = 'NODROP';
         document.getElementById('00011-1-dr').value = false;
         document.getElementById('customer-details-name-src').disabled = false;
         document.getElementById('customer-details-address-src').disabled = false;
         document.getElementById('final-sell-submit-button').innerHTML = 'SELL';
-        function_0_0_0_();
+        function_0_0_0_(var0, "Sell ?");
     }
-    function _0000_1111_0000(){
+    function _0000_1111_0000(var0){
         document.getElementById('00011-1-dr').value = 'DROP';
         document.getElementById('00011-1-dr').value = true;
         document.getElementById('customer-details-name-src').disabled = true;
         document.getElementById('customer-details-address-src').disabled = true;
         document.getElementById('final-sell-submit-button').innerHTML = 'DELETE';
-        function_0_0_0_();
+        function_0_0_0_(var0, "Delete ?");
     }
     function _00_00_00_00_00(){
         /*var var000 = document.getElementById('00011-1-dr').value;
@@ -227,10 +228,12 @@
         document.getElementById('medicineOrderForm').submit();
         return true;
     }
-    function function_0_0_0_() {
-        var var0 = confirm('Are you sure you want to sell?');
-        if(var0 == true){
-            return function__01__box_traverse();
+    function function_0_0_0_(var1, var2) {
+        var var0 = confirm('Are you sure you want to ' + var2);
+        if(var0 === true){
+            function__01__box_traverse();
+            $('#customerDetailsModal').modal('show');
+            return true;
         }else {
             return false;
         }

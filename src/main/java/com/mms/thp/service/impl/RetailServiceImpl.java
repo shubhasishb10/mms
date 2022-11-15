@@ -41,9 +41,9 @@ public class RetailServiceImpl implements RetailService {
     public Map<Date, List<RetailDto>> findRetailMapByDate(int pageNo, int recordPerPage){
         Pageable pageRequest = PageRequest.of(pageNo, recordPerPage);
         List<Retail> allRetails = new ArrayList<>();
-        List<Retail> retails = retailRepository.findAllByOrderByRetailDateAsc(pageRequest).getContent();
+        List<Retail> retails = retailRepository.findAllByOrderByRetailDateDesc(pageRequest).getContent();
         retails.forEach(r->allRetails.addAll(retailRepository.findRetailByRetailDate(r.getRetailDate())));
-        Map<Date, List<RetailDto>> retailMap = allRetails
+        return allRetails
                 .stream()
                 .collect(Collectors.toMap(Retail::getRetailDate, r-> r.getRetailMedicines()
                                         .stream().map(rm -> {
@@ -66,7 +66,6 @@ public class RetailServiceImpl implements RetailService {
                                             LinkedHashMap::new
                                         )
                         );
-        return retailMap;
     }
 
     @Override

@@ -37,11 +37,11 @@ public class Box {
         this.location = location;
     }
 
-    public int getSize() {
+    public int getCapacity() {
         return capacity;
     }
 
-    public void setSize(int capacity) {
+    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
