@@ -9,7 +9,8 @@
 <div th:fragment="pagination">
     <div class="row">
         <div class="col-sm-2 col-xs-2 col-md-2">
-            <a onclick="_0_0()" th:if="${hasPreviousPage}" id="prev-page" class="btn btn-outline-primary" style="float:left"
+            <a onclick="_0_0()" th:if="${hasPreviousPage}" id="prev-page" class="btn btn-outline-primary"
+               style="float:left"
                th:href="@{|${previousPageLink}|}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                      class="bi bi-caret-left-fill" viewBox="0 0 16 16">
@@ -32,7 +33,8 @@
                 </div>
                 <div class="col-md-4 col-xs-4 col-sm-4">
                     <select id="jump-to-page" class="form-select" style="width: auto">
-                        <option th:each="pageNo : ${totalPageArray}" th:selected="${pageNo == currentPage}" th:value="${pageNo}" th:text="${pageNo}"></option>
+                        <option th:each="pageNo : ${totalPageArray}" th:selected="${pageNo == currentPage}"
+                                th:value="${pageNo}" th:text="${pageNo}"></option>
                     </select>
                 </div>
                 <div class="col-md-4 col-xs-4 col-sm-4">
@@ -45,14 +47,16 @@
             <h6 class="text-center mt-2" th:text="${'Page ' +  currentPage + '/' + totalPages}"></h6>
         </div>-->
         <div class="col-sm-2 col-xs-2 col-md-2">
-            <a onclick="_0_0()" th:if="${hasNextPage}" id="next-page" class="btn btn-outline-primary" style="float:right"
+            <a onclick="_0_0()" th:if="${hasNextPage}" id="next-page" class="btn btn-outline-primary"
+               style="float:right"
                th:href="@{|${nextPageLink}|}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                      class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                     <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                 </svg>
             </a>
-            <button disabled th:if="${!hasNextPage}" id="next-page-btn" class="btn btn-outline-primary" style="float:right"
+            <button disabled th:if="${!hasNextPage}" id="next-page-btn" class="btn btn-outline-primary"
+                    style="float:right"
                     th:href="@{|${nextPageLink}|}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                      class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -62,7 +66,23 @@
         </div>
     </div>
     <script>
-        $("#jump-to-page").on("change",function(o){var n=o.currentTarget.value-1,a=window.location,i="",b=a.indexOf("?")<0?"?pageNo="+n:"&pageNo="+n,c=a+b;console.log(c);window.location=c});
+        $("#jump-to-page").on("change", function (o) {
+            let targetPageNo = o.currentTarget.value - 1;
+            let targetPage = window.location.href;
+            if (targetPage.indexOf('pageNo') > 0) {
+                targetPage = targetPage.substring(0, targetPage.indexOf('pageNo'));
+            }
+            if (targetPage.indexOf("?") < 0) {
+                targetPage = targetPage + '?pageNo=' + targetPageNo;
+            } else {
+                if (targetPage.indexOf('&') < 0) {
+                    targetPage = targetPage + '&pageNo=' + targetPageNo;
+                } else {
+                    targetPage = targetPage + 'pageNo=' + targetPageNo;
+                }
+            }
+            window.location = targetPage;
+        });
     </script>
 </div>
 </body>

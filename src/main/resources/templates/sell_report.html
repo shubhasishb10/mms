@@ -98,7 +98,7 @@
                 </td>-->
                 <td th:text="${retailDto.medicineName}"></td>
                 <td class="text-center" th:text="${retailDto.medicineCompany}"></td>
-                <td class="text-center" th:text="${retailDto.medicineVolume} + ' ML'"></td>
+                <td th:style="${medicine.volume == 450 ? 'background-color:#fcd7f0' : 'background-color:#fff'}" class="text-center" th:text="${retailDto.medicineVolume} + ' ML'"></td>
                 <td class="text-center" th:text="${retailDto.medicineCount}"></td>
                 <td class="text-center" th:text="${#strings.toUpperCase(retailDto.boxNumber)}"></td>
                 <td class="text-center" th:text="${retailDto.customerName}"></td>

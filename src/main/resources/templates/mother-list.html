@@ -107,7 +107,7 @@
             </td>
             <td class="text-center" th:text="${medicine.companyDisplayName}"></td>
             <td class="text-center" th:text="${medicine.price}"></td>
-            <td class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
+            <td th:style="${medicine.volume == 450 ? 'background-color:#fcd7f0' : 'background-color:#fff'}" class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
             <td th:text="${#strings.toUpperCase(medicine.boxes)}"></td>
         </tr>
     </table>
