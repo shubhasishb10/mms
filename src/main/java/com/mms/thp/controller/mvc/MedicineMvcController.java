@@ -138,9 +138,12 @@ public class MedicineMvcController {
     }
 
     @GetMapping("/order/census")
-    public String loadPageForMedicineCensus(Model model, @RequestParam(value = "inputLetter", defaultValue = "A") String inputLetter){
-        List<Medicine> medicineEntries = service.getMedicineByFirstLetter(inputLetter);
+    public String loadPageForMedicineCensus(Model model, @RequestParam(value = "inputLetter", required = false) String inputLetter){
+
         List<String> allLetters = service.getAllMedicineFirstLetter();
+        if(!allLetters.isEmpty() && inputLetter == null)
+            inputLetter = allLetters.get(0);
+        List<Medicine> medicineEntries = service.getMedicineByFirstLetter(inputLetter);
         model.addAttribute("medicineList", medicineEntries);
         model.addAttribute("headerText", "MEDICINE CENSUS");
         model.addAttribute("isSearchResult", false);
