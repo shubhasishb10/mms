@@ -1,0 +1,47 @@
+<head th:fragment="header" lang="en" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="ISO-8859-1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Scope+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" th:href="@{/img/logo.png}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <title>THP</title>
+    <style th:inline="text">
+        #loader {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.15);
+            z-index: 10000;
+        }
+
+        body{
+            font-weight: bolder;
+            /*background: url('/demo-0.0.1-SNAPSHOT/img/bg3.jpg') no-repeat fixed center center;*/
+            /*background-color: #F5F5F580;*/
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        * {
+            /*font-weight: bolder;*/
+            font-family: 'Arima Madurai', cursive;
+        }
+
+        *:hover {
+            outline: 2px solid #81349c;
+        }
+
+    </style>
+</head>

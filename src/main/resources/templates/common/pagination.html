@@ -9,7 +9,7 @@
 <div th:fragment="pagination">
     <div class="row">
         <div class="col-sm-2 col-xs-2 col-md-2">
-            <a onclick="_0_0()" th:if="${hasPreviousPage}" id="prev-page" class="btn btn-outline-primary"
+            <a onclick="_0_0()" th:if="${hasPreviousPage}" id="prev-page" class="btn btn-primary"
                style="float:left"
                th:href="@{|${previousPageLink}|}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -17,7 +17,7 @@
                     <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
                 </svg>
             </a>
-            <button th:if="${!hasPreviousPage}" disabled id="prev-page-btn" class="btn btn-outline-primary"
+            <button th:if="${!hasPreviousPage}" disabled id="prev-page-btn" class="btn btn-primary"
                     style="float:left"
                     th:href="@{|${previousPageLink}|}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -47,7 +47,7 @@
             <h6 class="text-center mt-2" th:text="${'Page ' +  currentPage + '/' + totalPages}"></h6>
         </div>-->
         <div class="col-sm-2 col-xs-2 col-md-2">
-            <a onclick="_0_0()" th:if="${hasNextPage}" id="next-page" class="btn btn-outline-primary"
+            <a onclick="_0_0()" th:if="${hasNextPage}" id="next-page" class="btn btn-primary"
                style="float:right"
                th:href="@{|${nextPageLink}|}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -55,7 +55,7 @@
                     <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                 </svg>
             </a>
-            <button disabled th:if="${!hasNextPage}" id="next-page-btn" class="btn btn-outline-primary"
+            <button disabled th:if="${!hasNextPage}" id="next-page-btn" class="btn btn-primary"
                     style="float:right"
                     th:href="@{|${nextPageLink}|}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"

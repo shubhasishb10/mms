@@ -1,21 +1,5 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="ISO-8859-1"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    <title>THP</title>
-    <style>
-        #edit-medicine-name-button:hover {
-            background-color:#d6b856 !important;
-        }
-
-    </style>
-</head>
+<head th:replace="/common/links :: header"></head>
 <body>
 <div class="container">
     <br/>
@@ -143,7 +127,7 @@
             <form th:action="@{|name/change/${medicine.medicineId}|}" method="post">
                 <div class="modal-header bg-info">
                     <h5 class="modal-title text-center" id="exampleModalLabel">CHANGE NAME</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button id="name-change-modal-header-close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <label for="name-change-old-name" class="form-label"><b>CURRENT NAME</b></label>
@@ -154,7 +138,7 @@
                     <input id="name-change-new-name" class="form-control" type="text" name="medicineNewName"/>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="name-change-close-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button id="medicine-change-submit-button" type="submit" class="btn btn-primary">
                         Save changes
                     </button>
@@ -170,7 +154,7 @@
             <!--<form th:action="@{|name/change/${medicine.medicineId}|}" method="post">-->
                 <div class="modal-header bg-info">
                     <h5 class="modal-title text-center" id="customerDetailsModalLabel">CUSTOMER DETAILS</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button id="customer-details-modal-header-close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <label for="customer-details-name-src" class="form-label"><b>NAME</b></label>
@@ -180,7 +164,7 @@
                     <input id="customer-details-address-src" class="form-control" type="text" name="customerAddress"/>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="sell-modal-close-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button id="final-sell-submit-button" type="button" class="btn btn-primary" onclick="return _00_00_00_00_00()">
                         SELL
                     </button>
@@ -276,7 +260,7 @@
         var var1_1 = 0;
         for(var var1=0;var1<var0_0.length;var1++) {
             var var_1_1_0 = var0_0[var1].value;
-            if(var_1_1_0 == "" || var_1_1_0 == undefined) {
+            if(var_1_1_0 === "" || var_1_1_0 === undefined) {
                 var_1_1_0 = 0;
             }
             var1_1 = var1_1+parseInt(var_1_1_0);
@@ -301,7 +285,7 @@
         return document.getElementById('name-change-new-name');
     }
     function function1_1_1_99_00(var0){
-        if(function0000_0_0_0_0_1().value == undefined || function0000_0_0_0_0_1().value == "" || function0000_0_0_0_0_1().value == null) {
+        if(function0000_0_0_0_0_1().value === undefined || function0000_0_0_0_0_1().value === "" || function0000_0_0_0_0_1().value == null) {
             function___0___0__0(true);
         }else {
             function___0___0__0(false);
@@ -313,4 +297,5 @@
     }
 
 </script>
+<div th:replace="/common/script :: loading-script"></div>
 </html>

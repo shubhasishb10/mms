@@ -1,29 +1,5 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="ISO-8859-1"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    <title>THP</title>
-    <style>
-        #loader {
-             display: none;
-             position: fixed;
-             top: 0;
-             left: 0;
-             right: 0;
-             bottom: 0;
-             width: 100%;
-             background: rgba(0,0,0,0.15);
-             z-index: 10000;
-        }
-
-    </style>
-</head>
+<head th:replace="/common/links :: header"></head>
 <body>
 <div class="container">
     <input id="totalPages" type="hidden" th:value="${totalPages}">
@@ -98,7 +74,7 @@
                 </td>-->
                 <td th:text="${retailDto.medicineName}"></td>
                 <td class="text-center" th:text="${retailDto.medicineCompany}"></td>
-                <td th:style="${medicine.volume == 450 ? 'background-color:#fcd7f0' : 'background-color:#fff'}" class="text-center" th:text="${retailDto.medicineVolume} + ' ML'"></td>
+                <td th:style="${retailDto.medicineVolume == 450 ? 'color:#de2618' : 'color:#000'}" class="text-center" th:text="${retailDto.medicineVolume} + ' ML'"></td>
                 <td class="text-center" th:text="${retailDto.medicineCount}"></td>
                 <td class="text-center" th:text="${#strings.toUpperCase(retailDto.boxNumber)}"></td>
                 <td class="text-center" th:text="${retailDto.customerName}"></td>
@@ -124,16 +100,4 @@
 </div>
 </body>
 </html>
-<div id="loader">
-    <div class="text-center" style="position:fixed;z-index:99999;top:50%;left:50%">
-        <div style="width:4rem;height:4rem" class="spinner-border text-danger" role="status">
-        </div>
-    </div>
-</div>
-<script>
-    function _0_0(){
-        var var0 = document.getElementById('loader');
-        var0.style.display = 'block';
-    }
-
-</script>
+<div th:replace="/common/script :: loading-script"></div>
