@@ -304,7 +304,7 @@ public class MedicineServiceImpl implements MedicineService {
                 .collect(toMap(Function.identity(),  e -> e.getMedicineBoxes().stream().map(m->m.getBox().getNumber()).collect(Collectors.toList())));
         Map<Medicine, Integer> totalMedicineCountMap = medicines.stream().filter(m->m.getMedicineBoxes().size() > 0)
                 .collect(toMap(Function.identity(),  e -> e.getMedicineBoxes().stream().map(MedicineBoxes::getMedicineCount).reduce(Integer::sum).get()));
-        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->m.setBoxes(medicineOnBoxes.get(m).stream().map(String::valueOf).collect(Collectors.joining(",  "))));
+        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->medicineOnBoxes.get(m).forEach(b->m.getBoxes().add(Medicine.BoxWrapperForHTML.generateWrapper(b))));
         medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->m.setTotalMedicinePresent(totalMedicineCountMap.get(m)));
         return medicines;
     }
