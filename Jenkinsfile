@@ -13,7 +13,7 @@ pipeline {
                 bat "cd D:/jenkins/temp/codebuild"
                 bat "echo 'Current Directory'"
                 bat "cd"
-                bat "git checkout -f ${branch}"
+                bat "D:/git/bin/git checkout -f ${branch}"
             }
         }
         stage ("build") {
