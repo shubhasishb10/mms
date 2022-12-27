@@ -4,23 +4,23 @@ pipeline {
     stages {
         stage("branch") {
             steps {
-                bat "echo 'selected branch name'"
-                bat "echo ${branch}"
+                echo 'selected branch name'
+                echo ${branch}
             }
         }
         stage ("cd") {
             steps {
-                bat "cd D:/jenkins/temp/codebuild"
-                bat "echo 'Current Directory'"
-                bat "cd"
-                bat "D:/git/bin/git checkout -f ${branch}"
+                cd "D:/jenkins/temp/codebuild"
+                echo 'Current Directory'
+                cd
+                "D:/git/bin/git checkout -f ${branch}"
             }
         }
         stage ("build") {
             steps {
-                bat "cd mms"
-                bat "D:/maven3/bin/mvn clean install"
-                bat "cd .."
+                cd mms
+                "D:/maven3/bin/mvn clean install"
+               cd ..
             }
         }
         stage ("clean") {
