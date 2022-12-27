@@ -4,14 +4,14 @@ pipeline {
 
     stages {
 
-        stage {
+        stage("Testing phase") {
 
             sh "echo ${branch}"
         }
 
         stage ("Change Directory") {
 
-            sh "cd D:\jenkins\temp\codebuild"
+            sh "cd D:/jenkins/temp/codebuild"
             sh "cd"
         }
     }
