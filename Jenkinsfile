@@ -16,7 +16,7 @@ pipeline {
                         cd
                         D:/git/bin/git checkout -f ${branch}
                         cd mms
-                        D:/maven3/bin/mvn clean install
+                        D:/maven3/bin/mvn clean install - -X
                         cd ..
                         echo 'Stopping existing running tomcat'
                         D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64/bin/shutdown.bat
