@@ -7,28 +7,28 @@
     <br/>
     <br/>
     <div class="row"
-         style="box-shadow:0px 0px 4px 0px;background-image: linear-gradient(to right, #edd0a8 , #f5bfcd, #f5f5c6, #b6f1fc);padding:2px">
+         style="/*box-shadow:0px 0px 4px 0px;*/border: 1px solid #ada7a7;border-radius: 5px;background-image: linear-gradient(to right, #edd0a8 , #f5bfcd, #f5f5c6, #b6f1fc);padding:8px">
         <div class="col-md-6 col-xs-6 col-sm-6">
-            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-2 btn btn-primary" th:href="@{/mvc/medicine/add}">
+            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-2 btn btn-outline-secondary" th:href="@{/mvc/medicine/add}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                      class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
                 </svg>
             </a>
-            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-2 btn btn-primary"
+            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-2 btn btn-outline-secondary"
                th:href="@{/mvc/medicine/search}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-search"
                      viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
             </a>
-            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-3 btn btn-secondary" th:href="@{/mvc/box/boxes}">
+            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-3 btn btn-outline-secondary" th:href="@{/mvc/box/boxes}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                      class="bi bi-box2-fill" viewBox="0 0 16 16">
                     <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6l.5.667Z"/>
                 </svg>
             </a>
-            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-2 btn btn-primary" th:href="@{/mvc/medicine/list}">
+            <a onclick="_0_0()" th:if="${!isSearchResult}" class="me-2 btn btn-outline-secondary" th:href="@{/mvc/medicine/list}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                      class="bi bi-reply-fill" viewBox="0 0 16 16">
                     <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
@@ -36,13 +36,13 @@
             </a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
-            <a onclick="_0_0()" style="float:right" class="btn btn-danger" th:href="@{/mvc/medicine/upload_excel}">
+            <!--<a onclick="_0_0()" style="float:right" class="btn btn-outlined-danger" th:href="@{/mvc/medicine/upload_excel}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-upload"
                      viewBox="0 0 16 16">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                     <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
                 </svg>
-            </a>
+            </a>-->
         </div>
     </div>
     <br/>
@@ -62,8 +62,8 @@
     <p style="font-size:2em;margin-left:48%" class="text-center badge bg-danger align-middle"
        th:text="${selectedLetter}"></p>
     <br/>
-    <table style="box-shadow:0px 0px 2px 0px;border-radius:3px;" class="table table-bordered table-striped">
-        <tr class="table-info">
+    <table style="/*box-shadow:0px 0px 2px 0px;*/border: 1px solid #ada7a7;border-radius:3px;" class="table table-bordered">
+        <tr class="table-info" style="border: 1px solid #ada7a7">
             <td class="text-center"><b>NAME</b></td>
             <td class="text-center"><b>COMPANY</b></td>
             <td class="text-center"><b>PRICE</b></td>

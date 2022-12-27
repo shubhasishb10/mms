@@ -4,18 +4,23 @@
 <br/>
 <br/>
 <div class="container">
-    <div class="row" style="box-shadow:0px 0px 4px 0px;background-image: linear-gradient(to right, #edd0a8 , #f5bfcd, #f5f5c6, #b6f1fc);;padding:2px;">
-        <a class="btn btn-primary col-sm-1 col-xs-1 col-md-1" th:href="@{/mvc/medicine/list}">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-reply-fill" viewBox="0 0 16 16">
-                <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
-            </svg>
-        </a>
+    <div class="row"
+         style="/*box-shadow:0px 0px 4px 0px;*/border: 1px solid #ada7a7;border-radius: 5px;background-image: linear-gradient(to right, #edd0a8 , #f5bfcd, #f5f5c6, #b6f1fc);;padding:8px;">
+        <div class="col-sm-1 col-xs-1 col-md-1">
+            <a class="btn btn-outline-secondary" th:href="@{/mvc/medicine/list}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                     class="bi bi-reply-fill" viewBox="0 0 16 16">
+                    <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+                </svg>
+            </a>
+        </div>
     </div>
     <br/>
     <br/>
     <h3 style="color:#105e69" class="text-center"><b>SEARCH MEDICINE</b></h3>
     <br/>
-    <form style="box-shadow:0px 0px 2px 0px;padding:10px;border-radius:3px;" class="row g-3" th:action="@{/mvc/medicine/search}" method="post">
+    <form style="/*box-shadow:0px 0px 2px 0px;*/border: 1px solid #ada7a7;padding:10px;border-radius:3px;" class="row g-3"
+          th:action="@{/mvc/medicine/search}" method="post">
         <div class="col-md-6 col-xs-12 col-sm-12">
             <label for="name" class="form-label"><b>NAME</b></label>
             <input type="text" class="form-control" id="name" th:name="name"/>
