@@ -18,7 +18,7 @@ pipeline {
         }
         stage ("build") {
             steps {
-                bat "mvn clean install"
+                bat "D:/maven3/bin/mvn clean install"
             }
         }
         stage ("clean") {
