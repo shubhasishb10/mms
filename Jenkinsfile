@@ -15,6 +15,7 @@ pipeline {
                         echo 'Current Directory'
                         cd
                         D:/git/bin/git checkout -f ${branch}
+                        export CATALINA_HOME="D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64"
                         D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64/bin/shutdown.bat
                         rmdir /s D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64/webapps/demo-0.0.1-SNAPSHOT
                         del /f D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64/webapps/demo-0.0.1-SNAPSHOT.war
