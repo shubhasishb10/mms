@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                sh "echo ${branch}"
+                bat "echo ${branch}"
             }
         }
 
@@ -16,8 +16,8 @@ pipeline {
 
             steps {
 
-                sh "cd D:/jenkins/temp/codebuild"
-                sh "cd"
+                bat "cd D:/jenkins/temp/codebuild"
+                bat "cd"
             }
         }
     }
