@@ -87,7 +87,14 @@ of this software please write us to shubhasishb10@gmail.com.-->
             <td class="text-center" th:text="${medicine.companyDisplayName}"></td>
             <td class="text-center" th:text="${medicine.price}"></td>
             <td th:style="${medicine.volume == 450 ? 'color:#de2618' : 'color:#000'}" class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
-            <td th:text="${#strings.toUpperCase(medicine.boxes)}"></td>
+            <td>
+                <span th:each="box, stats : ${medicine.boxes}">
+                    <!--<span th:if="${stats.index} != 0">&nbsp;</span>-->
+                    <a class="btn btn-xs btn-outline-secondary" th:href="${box.navigationLink}" th:text="${box.boxNumber}"></a>
+                    <!--&nbsp;
+                    <span th:if="${stats.index} != (${#lists.size(medicine.boxes)} - 1)">|</span>-->
+                </span>
+            </td>
         </tr>
     </table>
     <!--</div>-->

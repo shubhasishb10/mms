@@ -36,7 +36,7 @@ public class Medicine {
     @Transient
     private List<Integer> containingBoxes = new ArrayList<>();
     @Transient
-    private String boxes;
+    private List<BoxWrapperForHTML> boxes = new ArrayList<>();
     @Transient
     private String boxNumber;
     @Transient
@@ -129,13 +129,13 @@ public class Medicine {
         this.containingBoxes = containingBoxes;
     }
 
-    public String getBoxes() {
+    public List<BoxWrapperForHTML> getBoxes() {
         return boxes;
     }
 
-    public void setBoxes(String boxes) {
-        this.boxes = boxes.toUpperCase();
-    }
+    /*public void setBoxes(List<BoxWrapperForHTML> boxes) {
+        this.boxes = boxes;
+    }*/
 
     public Map<Integer, Integer> getMedicineCountByBoxNumber() {
         return medicineCountByBoxNumber;
@@ -204,5 +204,22 @@ public class Medicine {
                 ", volume=" + volume +
                 ", box=" + medicineBoxes +
                 '}';
+    }
+
+    public static class BoxWrapperForHTML {
+        public String boxNumber;
+        public String navigationLink;
+
+        @Override
+        public String toString() {
+            return String.valueOf(boxNumber);
+        }
+
+        public static BoxWrapperForHTML generateWrapper(String boxNumber) {
+            BoxWrapperForHTML boxWrapperForHTML = new BoxWrapperForHTML();
+            boxWrapperForHTML.boxNumber = boxNumber;
+            boxWrapperForHTML.navigationLink = "/mvc/box/medicines?selectedBox=" + boxNumber;
+            return boxWrapperForHTML;
+        }
     }
 }

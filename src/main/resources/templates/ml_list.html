@@ -64,8 +64,10 @@ of this software please write us to shubhasishb10@gmail.com.-->
             </div>
             <div class="col-md-3 col-sm-3 col-xs-3" style="float:left">
                 <button class="btn btn-primary" type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                         class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
                     </svg>
                 </button>
             </div>
@@ -78,7 +80,8 @@ of this software please write us to shubhasishb10@gmail.com.-->
             th:text="${selectedVolume + ' ML MEDICINES'}"></h3>
         <br/>
         <br/>
-        <table style="/*box-shadow:0px 0px 2px 0px;*/border: 1px solid #ada7a7;border-radius:3px;" class="table table-bordered">
+        <table style="/*box-shadow:0px 0px 2px 0px;*/border: 1px solid #ada7a7;border-radius:3px;"
+               class="table table-bordered">
             <tr class="table-primary" style="border: 1px solid #ada7a7">
                 <td class="text-center"><b>NAME</b></td>
                 <td class="text-center"><b>COMPANY</b></td>
@@ -98,8 +101,17 @@ of this software please write us to shubhasishb10@gmail.com.-->
                 </td>
                 <td class="text-center" th:text="${medicine.companyDisplayName}"></td>
                 <td class="text-center" th:text="${medicine.price}"></td>
-                <td th:style="${medicine.volume == 450 ? 'color:#de2618' : 'color:#000'}" class="text-center" th:text="${medicine.volume}+ ' ML'"></td>
-                <td class="text-center" th:text="${#strings.toUpperCase(medicine.boxes)}"></td>
+                <td th:style="${medicine.volume == 450 ? 'color:#de2618' : 'color:#000'}" class="text-center"
+                    th:text="${medicine.volume}+ ' ML'"></td>
+                <td>
+                <span th:each="box, stats : ${medicine.boxes}">
+                    <!--<span th:if="${stats.index} != 0">&nbsp;</span>-->
+                    <a class="btn btn-xs btn-outline-secondary" th:href="${box.navigationLink}"
+                       th:text="${box.boxNumber}"></a>
+                    <!--&nbsp;
+                    <span th:if="${stats.index} != (${#lists.size(medicine.boxes)} - 1)">|</span>-->
+                </span>
+                </td>
             </tr>
         </table>
         <div class="row">
@@ -107,7 +119,8 @@ of this software please write us to shubhasishb10@gmail.com.-->
                 &nbsp;<!-- Dummy column to give the space and align the content in the center -->
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
-                &nbsp; <div th:replace="/common/pagination :: pagination"> </div>
+                &nbsp;
+                <div th:replace="/common/pagination :: pagination"></div>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
                 &nbsp;<!-- Dummy column to give the space and align the content in the center -->
