@@ -18,7 +18,9 @@ pipeline {
         }
         stage ("build") {
             steps {
+                bat "cd mms"
                 bat "D:/maven3/bin/mvn clean install"
+                bat "cd .."
             }
         }
         stage ("clean") {
@@ -38,6 +40,11 @@ pipeline {
         stage ("complete") {
             steps {
                 bat "echo 'Build and Deployment is completed'"
+            }
+        }
+        stage ("cleanup") {
+            steps {
+                bat "rmdir /s mms"
             }
         }
     }
