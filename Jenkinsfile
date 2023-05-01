@@ -18,6 +18,8 @@ pipeline {
                         D:/git/bin/git pull
                         set CATALINA_HOME="D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64"
                         D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64/bin/shutdown.bat
+                        echo 'Waiting for 1 mins for closing the tomcat'
+                        sleep 60 // seconds
                         rmdir /s D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64/webapps/demo-0.0.1-SNAPSHOT
                         del /f D:/apache-tomcat-9.0.64-windows-x64/apache-tomcat-9.0.64/webapps/demo-0.0.1-SNAPSHOT.war
                         set MAVEN_OPTS="-Xmx800m"
