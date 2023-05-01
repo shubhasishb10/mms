@@ -28,5 +28,6 @@ pipeline {
                         echo 'Build and Deployment is completed'
                     """
             }
+        }
     }
 }
