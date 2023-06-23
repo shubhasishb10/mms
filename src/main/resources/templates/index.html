@@ -115,7 +115,7 @@ of this software please write us to shubhasishb10@gmail.com.-->
             <td>
                 <span th:each="box, stats : ${medicine.boxes}">
                     <!--<span th:if="${stats.index} != 0">&nbsp;</span>-->
-                    <a class="btn btn-xs btn-outline-secondary" th:href="${box.navigationLink}" th:text="${box.boxNumber}"></a>
+                    <a class="btn btn-xs btn-outline-secondary" th:href="${box.navigationLink}" th:text="${#strings.toUpperCase(box.boxNumber)}"></a>
                     <!--&nbsp;
                     <span th:if="${stats.index} != (${#lists.size(medicine.boxes)} - 1)">|</span>-->
                 </span>
