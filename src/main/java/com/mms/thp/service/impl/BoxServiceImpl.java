@@ -58,12 +58,12 @@ public class BoxServiceImpl implements BoxService {
     }
 
     private List<Medicine> populateMedicineTotalCountInTheBox(List<Medicine> medicines, String boxNumber) {
-        Map<Medicine, List<String>> medicineOnBoxes = medicines.stream().filter(m->m.getMedicineBoxes().size() > 0)
+        Map<Medicine, List<String>> medicineOnBoxes = medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty())
                 .collect(toMap(Function.identity(), e -> e.getMedicineBoxes().stream().map(m->m.getBox().getNumber()).collect(Collectors.toList())));
-        Map<Medicine, Integer> totalMedicineCountMap = medicines.stream().filter(m->m.getMedicineBoxes().size() > 0)
+        Map<Medicine, Integer> totalMedicineCountMap = medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty())
                 .collect(toMap(Function.identity(),  e -> e.getMedicineBoxes().stream().filter(el->el.getBox().getNumber().equalsIgnoreCase(boxNumber)).map(MedicineBoxes::getMedicineCount).reduce(Integer::sum).get()));
-        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->medicineOnBoxes.get(m).forEach(b->m.getBoxes().add(Medicine.BoxWrapperForHTML.generateWrapper(b))));
-        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->m.setMedicineInTheBox(totalMedicineCountMap.get(m)));
+        medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty()).forEach(m->medicineOnBoxes.get(m).forEach(b->m.getBoxes().add(Medicine.BoxWrapperForHTML.generateWrapper(b))));
+        medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty()).forEach(m->m.setMedicineInTheBox(totalMedicineCountMap.get(m)));
         return medicineService.populateBoxesFieldAndTotalCountApi(medicines);
     }
 

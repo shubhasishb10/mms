@@ -84,7 +84,7 @@ public class MedicineServiceImpl implements MedicineService {
         LOGGER.info("{}|Start of(getMedicineById)|Params: id={}", CLASS_TYPE, id);
         Medicine medicine = medicineRepository.findById(id).orElse(null);
         LOGGER.info("Fetched the medicine from repository, medicine={}", medicine);
-        if(medicine != null && medicine.getMedicineBoxes().size() > 0) {
+        if(medicine != null && !medicine.getMedicineBoxes().isEmpty()) {
             LOGGER.info("Got the medicine. medicine in stock, medicineBoxes={}", medicine.getMedicineBoxes());
             medicine.setTotalMedicinePresent(medicine.getMedicineBoxes().stream().map(MedicineBoxes::getMedicineCount).reduce(Integer::sum).get());
         }
@@ -148,7 +148,7 @@ public class MedicineServiceImpl implements MedicineService {
             // For updating the
             return theMedicine;
         }catch(Exception e) {
-            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e);
+            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e.toString());
         }
         return null;
     }
@@ -246,7 +246,7 @@ public class MedicineServiceImpl implements MedicineService {
                             LOGGER.error("MedicineBoxes entry not present in the db");
                         }
                     }else {
-                        LOGGER.error("Box not present with the box number:{}" + b.getBoxNumber());
+                        LOGGER.error("Box not present with the box number:{}", b.getBoxNumber());
                     }
                 });
 
@@ -254,7 +254,7 @@ public class MedicineServiceImpl implements MedicineService {
                 LOGGER.error("error in sell medicine, medicine not present with id={}", medicineId);
             }
         }catch(Exception e) {
-            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e);
+            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e.toString());
         }
         LOGGER.info("{}|End of(sellMedicine)|", CLASS_TYPE);
         return retailMedicineReturn.get();
@@ -279,7 +279,7 @@ public class MedicineServiceImpl implements MedicineService {
                 LOGGER.info("Retail information saved to db");
             }
         }catch(Exception e) {
-            LOGGER.error("error in populateRetailEntity: {} {}, exception={}", medicine, orderedBox, e);
+            LOGGER.error("error in populateRetailEntity: {} {}, exception={}", medicine, orderedBox, e.toString());
         }
         LOGGER.info("{}|End of(populateRetailEntity)|", CLASS_TYPE);
     }
@@ -293,19 +293,19 @@ public class MedicineServiceImpl implements MedicineService {
             LOGGER.info("Got the medicine lis and populating the transient field in the medicine");
             return populateBoxesFieldAndTotalCount(medicines);
         }catch(Exception e) {
-            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e);
+            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e.toString());
         }
         LOGGER.info("{}|End of(findAllMedicine)|", CLASS_TYPE);
         return null;
     }
 
     private List<Medicine> populateBoxesFieldAndTotalCount(List<Medicine> medicines) {
-        Map<Medicine, List<String>> medicineOnBoxes = medicines.stream().filter(m->m.getMedicineBoxes().size() > 0)
+        Map<Medicine, List<String>> medicineOnBoxes = medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty())
                 .collect(toMap(Function.identity(),  e -> e.getMedicineBoxes().stream().map(m->m.getBox().getNumber()).collect(Collectors.toList())));
-        Map<Medicine, Integer> totalMedicineCountMap = medicines.stream().filter(m->m.getMedicineBoxes().size() > 0)
+        Map<Medicine, Integer> totalMedicineCountMap = medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty())
                 .collect(toMap(Function.identity(),  e -> e.getMedicineBoxes().stream().map(MedicineBoxes::getMedicineCount).reduce(Integer::sum).get()));
-        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->medicineOnBoxes.get(m).forEach(b->m.getBoxes().add(Medicine.BoxWrapperForHTML.generateWrapper(b))));
-        medicines.stream().filter(m->m.getMedicineBoxes().size() > 0).forEach(m->m.setTotalMedicinePresent(totalMedicineCountMap.get(m)));
+        medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty()).forEach(m->medicineOnBoxes.get(m).forEach(b->m.getBoxes().add(Medicine.BoxWrapperForHTML.generateWrapper(b))));
+        medicines.stream().filter(m-> !m.getMedicineBoxes().isEmpty()).forEach(m->m.setTotalMedicinePresent(totalMedicineCountMap.get(m)));
         return medicines;
     }
 
@@ -362,7 +362,7 @@ public class MedicineServiceImpl implements MedicineService {
             LOGGER.info("Searching medicine db with search criteria={}", builder.buildDto());
             return populateBoxesFieldAndTotalCount(medicineRepository.searchMedicineByCriteria(builder.buildDto()));
         }catch(Exception e) {
-            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e);
+            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e.toString());
         }
         LOGGER.info("{}|End of(searchMedicine)|", CLASS_TYPE);
         return null;
@@ -391,14 +391,15 @@ public class MedicineServiceImpl implements MedicineService {
             if(workbook != null) {
                 try {
                     workbook.close();
-                } catch (IOException ignore) {
-                    ignore.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
         }
         System.out.println("Testing");
     }
 
+    @SuppressWarnings("deprecation")
     private Medicine prepareMedicineObject(Row row) {
 
         Cell nameCell = row.getCell(ThpUtility.MedicineColumnIndex.NAME.ordinal());
@@ -440,7 +441,7 @@ public class MedicineServiceImpl implements MedicineService {
             medicineMapLetterWise = medicines.stream().collect(groupingBy(v->String.valueOf(v.getName().charAt(0)).toUpperCase()));
 
         }catch(Exception e) {
-            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e);
+            LOGGER.error("{}|Exception|{}", CLASS_TYPE, e.toString());
         }
         return medicineMapLetterWise;
     }

@@ -73,13 +73,13 @@ public class SimpleDatabaseBackupService {
             List<String> headers = query.getResultList();
 
             Query query1 = entityManager.createNativeQuery(QUERY);
-            List<Object[]> result = query1.getResultList();
+            List<?> result = query1.getResultList();
             List<List<String>> valueList = result.stream()
                     .map(Arrays::asList)
                     .map(x -> x.stream().map(String::valueOf).collect(Collectors.toList()))
                     .collect(Collectors.toList());
 
-            valueList.add(0, headers.stream().map(String::toUpperCase).collect(Collectors.toList()));
+            valueList.add(headers.stream().map(String::toUpperCase).collect(Collectors.toList()));
             return valueList;
         }
     }

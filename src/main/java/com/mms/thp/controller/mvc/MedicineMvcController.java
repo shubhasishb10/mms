@@ -15,7 +15,6 @@ import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,8 +25,6 @@ import org.thymeleaf.util.StringUtils;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.IntStream;
 
 @Controller
 @RequestMapping({"/mvc/medicine", "/"})
@@ -73,6 +70,7 @@ public class MedicineMvcController {
         Medicine medicine = new Medicine();
         model.addAttribute("medicine", medicine);
         model.addAttribute("isUpdateRequest", false);
+        ThpUtility.enrichModelWithHeaderData(model);
         LOGGER.info("{}|End of(loadAddMedicinePage)|", CLASS_TYPE);
         return WebPages.ADD_MEDICINE.toString();
     }

@@ -3,3 +3,7 @@
 h4 {
 color: red;
 }
+
+.boxed {
+    box-shadow:0 0 2px 0
+}

@@ -18,6 +18,7 @@ import java.util.*;
 public class Medicine {
 
     public static final String BOX_WISE_NAVIGATION_LINK_URL = "/demo-0.0.1-SNAPSHOT/mvc/box/medicines?selectedBox=";
+    public static final String BOX_WISE_NAVIGATION_LINK_URL_LOCAL = "/mvc/box/medicines?selectedBox=";
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long medicineId;
@@ -219,7 +220,7 @@ public class Medicine {
         public static BoxWrapperForHTML generateWrapper(String boxNumber) {
             BoxWrapperForHTML boxWrapperForHTML = new BoxWrapperForHTML();
             boxWrapperForHTML.boxNumber = boxNumber;
-            boxWrapperForHTML.navigationLink = BOX_WISE_NAVIGATION_LINK_URL + boxNumber;
+            boxWrapperForHTML.navigationLink = BOX_WISE_NAVIGATION_LINK_URL_LOCAL + boxNumber;
             return boxWrapperForHTML;
         }
     }

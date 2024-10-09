@@ -13,7 +13,6 @@ import java.util.stream.IntStream;
 
 public class ThpUtility {
 
-    public static final String ADMIN_KEY = "NO-ONE-CAN-CHANGE";
     public static final int RECORD_PER_PAGE = 15;
     public static final int RECORD_PER_PAGE_SELL_REPORT = 7;
     private static final String TOTAL_PAGES_ATTR_NAME = "totalPages";
@@ -75,5 +74,9 @@ public class ThpUtility {
         COUNT,
         ML,
         BOX_NUMBER
+    }
+
+    public static void enrichModelWithHeaderData(Model model) {
+        model.addAttribute("isSearchResult", false);
     }
 }
