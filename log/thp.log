@@ -1,0 +1,1082 @@
+2024-12-23_21:25:56.963 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 6753 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:25:56.963 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:35:01.116 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 7906 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:35:01.117 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:38:37.193 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8029 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:38:37.194 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:39:15.654 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8052 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:39:15.654 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:39:29.353 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8065 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:39:29.353 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:42:40.641 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8104 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:42:40.641 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:44:03.557 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8133 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:44:03.557 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:45:21.324 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8147 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:45:21.325 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:45:40.234 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8156 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:45:40.235 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:48:24.428 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8172 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:48:24.429 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:49:20.414 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8208 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:49:20.414 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:49:34.788 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8220 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:49:34.789 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:50:06.086 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8233 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:50:06.086 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:51:38.404 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8254 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:51:38.404 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:52:01.546 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8264 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:52:01.547 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:52:04.156 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.857 seconds (JVM running for 3.187)
+2024-12-23_21:53:28.311 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_21:53:28.368 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_21:53:28.429 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_21:53:28.446 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_21:53:36.753 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_21:53:36.754 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_21:54:00.205 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=100.0, purchaseDate=null, volume=100, box=null}|
+2024-12-23_21:54:00.267 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=100.0, purchaseDate=null, volume=100, box=null}
+2024-12-23_21:54:00.305 [http-nio-8090-exec-1] ERROR c.m.t.s.impl.MedicineServiceImpl - SERVICE|Exception|org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2024-12-23_21:54:58.027 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8347 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:54:58.027 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_21:55:00.767 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 3.016 seconds (JVM running for 3.402)
+2024-12-23_21:59:31.731 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8493 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_21:59:31.732 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:00:30.090 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8509 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:00:30.091 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:00:32.460 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.627 seconds (JVM running for 2.969)
+2024-12-23_22:00:48.926 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_22:00:48.927 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_22:00:59.516 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:00:59.555 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:00:59.604 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:00:59.617 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:04:52.260 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8545 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:04:52.261 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:06:00.364 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8565 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:06:00.365 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:06:03.083 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 3.004 seconds (JVM running for 3.353)
+2024-12-23_22:06:07.406 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:06:07.428 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:06:07.458 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:06:07.475 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:07:31.884 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8618 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:07:31.884 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:08:17.216 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8655 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:08:17.217 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:09:16.582 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8670 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:09:16.583 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:09:18.996 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.731 seconds (JVM running for 3.046)
+2024-12-23_22:09:23.841 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:09:23.859 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:09:23.910 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:09:23.944 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:09:31.240 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:09:31.263 [http-nio-8090-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=1, recordPerPage=15
+2024-12-23_22:09:31.276 [http-nio-8090-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:09:31.293 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:12:46.264 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:12:46.312 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:12:46.351 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:12:46.377 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:12:53.449 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:12:53.460 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=1, recordPerPage=15
+2024-12-23_22:12:53.465 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:12:53.474 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:13:25.240 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8703 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:13:25.241 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:13:27.678 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 3.018 seconds (JVM running for 3.336)
+2024-12-23_22:13:31.785 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:13:31.807 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=1, recordPerPage=15
+2024-12-23_22:13:31.845 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:13:31.859 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:13:33.584 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_22:13:33.584 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_22:13:57.064 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=100, box=null}|
+2024-12-23_22:13:57.106 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=100, box=null}
+2024-12-23_22:13:57.151 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Box not present creating the box
+2024-12-23_22:13:57.196 [http-nio-8090-exec-7] ERROR c.m.t.s.impl.MedicineServiceImpl - SERVICE|Exception|org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+2024-12-23_22:14:40.349 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_22:14:40.350 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_22:14:45.527 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=100, box=null}|
+2024-12-23_22:14:45.567 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=100, box=null}
+2024-12-23_22:14:45.590 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Box not present creating the box
+2024-12-23_22:14:45.613 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the box, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}
+2024-12-23_22:14:45.626 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine not in the db, creating the medicine
+2024-12-23_22:14:45.642 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:14:45 IST 2024, volume=100, box=null}
+2024-12-23_22:14:45.642 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createOrSaveCompanyWithMedicine)|Params: companyName=sbl, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:14:45 IST 2024, volume=100, box=null}
+2024-12-23_22:14:45.658 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Company info not found creating a new company entry
+2024-12-23_22:14:45.658 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Found the company=com.mms.thp.model.Company@1bc1c
+2024-12-23_22:14:45.665 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Created the entry for CompanyDetails for the medicine
+2024-12-23_22:14:45.665 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createOrSaveCompanyWithMedicine)|
+2024-12-23_22:14:45.665 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createMedicineBoxEntry)|Params: theMedicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:14:45 IST 2024, volume=100, box=null}, theBox=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, addedCount=30|
+2024-12-23_22:14:45.671 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBox entry is not present creating a medicine box entry
+2024-12-23_22:14:45.675 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Saved the MedicineBox entry
+2024-12-23_22:14:45.675 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createMedicineBoxEntry)|
+2024-12-23_22:14:45.675 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(addMedicine)|
+2024-12-23_22:14:45.686 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(insertMedicine)|
+2024-12-23_22:14:45.693 [http-nio-8090-exec-3] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:14:45.694 [http-nio-8090-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:14:45.702 [http-nio-8090-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:14:45.726 [http-nio-8090-exec-3] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:15:02.314 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:15:02.356 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:15:02.376 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:15:02.400 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:15:12.977 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:15:13.016 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:15:13.038 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:15:13.044 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:15:13.044 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:15:13.048 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:15:28.404 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(updateMedicineCount)|Params: medicineId=1|
+2024-12-23_22:15:28.438 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:15:28.453 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:15:28.459 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:15:28.459 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:15:28.461 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(updateMedicineCount)|
+2024-12-23_22:15:33.256 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:15:33.263 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:15:33.269 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:15:33.276 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:15:33.276 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:15:33.280 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:16:16.195 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(updateMedicineCount)|Params: medicineId=1|
+2024-12-23_22:16:16.240 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:16:16.262 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:16:16.268 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:16:16.269 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:16:16.275 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(updateMedicineCount)|
+2024-12-23_22:17:11.215 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:17:11.256 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:17:11.282 [http-nio-8090-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:17:11.308 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:17:13.237 [http-nio-8090-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:17:13.242 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:17:13.248 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:17:13.253 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:17:13.253 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:17:13.257 [http-nio-8090-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:17:16.263 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(updateMedicineCount)|Params: medicineId=1|
+2024-12-23_22:17:16.272 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:17:16.281 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:17:16.288 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:17:16.289 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:17:16.293 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(updateMedicineCount)|
+2024-12-23_22:17:18.522 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:17:18.528 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:17:18.538 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:17:18.556 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:17:23.294 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadSearchResult)|Params: name=A, company=, ml=0|
+2024-12-23_22:17:23.302 [http-nio-8090-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(searchMedicine)|Params: name=A, company=, ml=0
+2024-12-23_22:17:23.302 [http-nio-8090-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - Creating search criteria
+2024-12-23_22:17:23.303 [http-nio-8090-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - Searching medicine db with search criteria=com.mms.thp.dto.SearchCriteria@4ab9f05c
+2024-12-23_22:17:23.323 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadSearchPage)|
+2024-12-23_22:17:24.787 [http-nio-8090-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:17:24.791 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:17:24.796 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:17:24.801 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:17:24.802 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:17:24.805 [http-nio-8090-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:17:26.188 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(updateMedicineCount)|Params: medicineId=1|
+2024-12-23_22:17:26.191 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:17:26.196 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]}
+2024-12-23_22:17:26.202 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=30}]
+2024-12-23_22:17:26.202 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:17:26.204 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(updateMedicineCount)|
+2024-12-23_22:17:27.686 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:17:27.691 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:17:27.698 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:17:27.717 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:21:13.618 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 8879 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:21:13.618 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:21:16.104 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.846 seconds (JVM running for 3.212)
+2024-12-23_22:21:19.450 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:21:19.490 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:21:19.536 [http-nio-8090-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:21:19.549 [http-nio-8090-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:21:21.306 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_22:21:21.306 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_22:21:46.256 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=10, box=null}|
+2024-12-23_22:21:46.294 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=0, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=10, box=null}
+2024-12-23_22:21:46.327 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Box not present creating the box
+2024-12-23_22:21:46.351 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the box, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}
+2024-12-23_22:21:46.358 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine not in the db, creating the medicine
+2024-12-23_22:21:46.370 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:21:46 IST 2024, volume=10, box=null}
+2024-12-23_22:21:46.370 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createOrSaveCompanyWithMedicine)|Params: companyName=sbl, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:21:46 IST 2024, volume=10, box=null}
+2024-12-23_22:21:46.373 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Company info not found creating a new company entry
+2024-12-23_22:21:46.373 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Found the company=com.mms.thp.model.Company@1bc1c
+2024-12-23_22:21:46.379 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Created the entry for CompanyDetails for the medicine
+2024-12-23_22:21:46.379 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createOrSaveCompanyWithMedicine)|
+2024-12-23_22:21:46.379 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createMedicineBoxEntry)|Params: theMedicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:21:46 IST 2024, volume=10, box=null}, theBox=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, addedCount=20|
+2024-12-23_22:21:46.386 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBox entry is not present creating a medicine box entry
+2024-12-23_22:21:46.389 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Saved the MedicineBox entry
+2024-12-23_22:21:46.389 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createMedicineBoxEntry)|
+2024-12-23_22:21:46.389 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(addMedicine)|
+2024-12-23_22:21:46.404 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(insertMedicine)|
+2024-12-23_22:21:46.412 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:21:46.413 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:21:46.422 [http-nio-8090-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:21:46.442 [http-nio-8090-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:21:49.799 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:21:49.804 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:21:49.815 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}]}
+2024-12-23_22:21:49.823 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}]
+2024-12-23_22:21:49.824 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:21:49.830 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:21:51.360 [http-nio-8090-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(updateMedicineCount)|Params: medicineId=1|
+2024-12-23_22:21:51.364 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:21:51.369 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}]}
+2024-12-23_22:21:51.374 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}]
+2024-12-23_22:21:51.375 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:21:51.377 [http-nio-8090-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(updateMedicineCount)|
+2024-12-23_22:21:59.911 [http-nio-8090-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=10, box=null}|
+2024-12-23_22:21:59.932 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=null, volume=10, box=null}
+2024-12-23_22:21:59.946 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Box not present creating the box
+2024-12-23_22:21:59.954 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the box, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}
+2024-12-23_22:21:59.959 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine is present in the box, refreshing the purchase date
+2024-12-23_22:21:59.961 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:21:59 IST 2024, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}]}
+2024-12-23_22:21:59.964 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createOrSaveCompanyWithMedicine)|Params: companyName=sbl, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:21:59 IST 2024, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}]}
+2024-12-23_22:21:59.966 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Company is already present in the db
+2024-12-23_22:21:59.966 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Found the company=com.mms.thp.model.Company@1bc1c
+2024-12-23_22:21:59.968 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Created the entry for CompanyDetails for the medicine
+2024-12-23_22:21:59.968 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createOrSaveCompanyWithMedicine)|
+2024-12-23_22:21:59.968 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createMedicineBoxEntry)|Params: theMedicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:21:59 IST 2024, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}]}, theBox=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, addedCount=40|
+2024-12-23_22:21:59.970 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBox entry is not present creating a medicine box entry
+2024-12-23_22:21:59.971 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Saved the MedicineBox entry
+2024-12-23_22:21:59.972 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createMedicineBoxEntry)|
+2024-12-23_22:21:59.972 [http-nio-8090-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(addMedicine)|
+2024-12-23_22:21:59.976 [http-nio-8090-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(insertMedicine)|
+2024-12-23_22:21:59.980 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:21:59.981 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:21:59.983 [http-nio-8090-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:21:59.995 [http-nio-8090-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:22:04.622 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_22:22:04.623 [http-nio-8090-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_22:22:27.266 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=0, name='pulsatilla', company='hapco', price=150.0, purchaseDate=null, volume=450, box=null}|
+2024-12-23_22:22:27.292 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=0, name='pulsatilla', company='hapco', price=150.0, purchaseDate=null, volume=450, box=null}
+2024-12-23_22:22:27.308 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Box is present in the db, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}
+2024-12-23_22:22:27.309 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the box, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}
+2024-12-23_22:22:27.311 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine not in the db, creating the medicine
+2024-12-23_22:22:27.320 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine, medicine=Medicine{medicineId=2, name='pulsatilla', company='hapco', price=150.0, purchaseDate=Mon Dec 23 22:22:27 IST 2024, volume=450, box=null}
+2024-12-23_22:22:27.320 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createOrSaveCompanyWithMedicine)|Params: companyName=hapco, medicine=Medicine{medicineId=2, name='pulsatilla', company='hapco', price=150.0, purchaseDate=Mon Dec 23 22:22:27 IST 2024, volume=450, box=null}
+2024-12-23_22:22:27.322 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Company info not found creating a new company entry
+2024-12-23_22:22:27.322 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Found the company=com.mms.thp.model.Company@5e75562
+2024-12-23_22:22:27.323 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Created the entry for CompanyDetails for the medicine
+2024-12-23_22:22:27.323 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createOrSaveCompanyWithMedicine)|
+2024-12-23_22:22:27.324 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createMedicineBoxEntry)|Params: theMedicine=Medicine{medicineId=2, name='pulsatilla', company='hapco', price=150.0, purchaseDate=Mon Dec 23 22:22:27 IST 2024, volume=450, box=null}, theBox=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, addedCount=10|
+2024-12-23_22:22:27.326 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBox entry is not present creating a medicine box entry
+2024-12-23_22:22:27.327 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Saved the MedicineBox entry
+2024-12-23_22:22:27.329 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createMedicineBoxEntry)|
+2024-12-23_22:22:27.329 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(addMedicine)|
+2024-12-23_22:22:27.335 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(insertMedicine)|
+2024-12-23_22:22:27.339 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:22:27.340 [http-nio-8090-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:22:27.343 [http-nio-8090-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:22:27.355 [http-nio-8090-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:23:05.885 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=2|
+2024-12-23_22:23:05.923 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=2
+2024-12-23_22:23:05.942 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=2, name='pulsatilla', company='hapco', price=150.0, purchaseDate=2024-12-23, volume=450, box=[MedicineBoxes{medicineBoxId=3, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]}
+2024-12-23_22:23:05.948 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=3, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]
+2024-12-23_22:23:05.948 [http-nio-8090-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:23:05.954 [http-nio-8090-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:23:13.808 [http-nio-8090-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:23:13.840 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:23:13.858 [http-nio-8090-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:23:13.885 [http-nio-8090-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:23:47.078 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:23:47.106 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:23:47.124 [http-nio-8090-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:23:47.154 [http-nio-8090-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:28:58.784 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9017 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:28:58.784 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:29:34.576 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9050 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:29:34.576 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:29:36.941 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.624 seconds (JVM running for 2.964)
+2024-12-23_22:29:50.117 [http-nio-8080-exec-3] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:29:50.165 [http-nio-8080-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:29:50.218 [http-nio-8080-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:29:50.297 [http-nio-8080-exec-3] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:30:04.143 [http-nio-8080-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:30:04.181 [http-nio-8080-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:30:04.209 [http-nio-8080-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}, MedicineBoxes{medicineBoxId=2, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, medicineCount=40}]}
+2024-12-23_22:30:04.221 [http-nio-8080-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}, MedicineBoxes{medicineBoxId=2, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, medicineCount=40}]
+2024-12-23_22:30:04.222 [http-nio-8080-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:30:04.226 [http-nio-8080-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:30:33.813 [http-nio-8080-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(sellMedicine)|Params: medicineOrder=MedicineOrder{medicineId=1, boxes=[OrderedBox{boxNumber='10', medicineCount=9}, OrderedBox{boxNumber='23', medicineCount=20}]}|
+2024-12-23_22:30:33.851 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(sellMedicine)|Params: medicineOrder=MedicineOrder{medicineId=1, boxes=[OrderedBox{boxNumber='10', medicineCount=9}, OrderedBox{boxNumber='23', medicineCount=20}]}
+2024-12-23_22:30:33.873 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine present in the db medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}, MedicineBoxes{medicineBoxId=2, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, medicineCount=40}]}
+2024-12-23_22:30:33.873 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Selling medicineCount 9 from the box 10
+2024-12-23_22:30:33.885 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Box present in the db, theBox=Box{boxId='1', number='10', location='null', capacity=0, name='null'}
+2024-12-23_22:30:33.890 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBoxes entry is present in the db, medicineBoxes=MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=20}
+2024-12-23_22:30:33.890 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Adjusting the medicine count in the box, new MedicineCount=11
+2024-12-23_22:30:33.890 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(populateRetailEntity)|Params: medicine=Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=11}, MedicineBoxes{medicineBoxId=2, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, medicineCount=40}]}, orderedBox=OrderedBox{boxNumber='10', medicineCount=9}
+2024-12-23_22:30:33.893 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Creating retail information
+2024-12-23_22:30:33.952 [http-nio-8080-exec-9] ERROR c.m.t.s.impl.MedicineServiceImpl - error in populateRetailEntity: Medicine{medicineId=1, name='arnica', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=10, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='10', location='null', capacity=0, name='null'}, medicineCount=11}, MedicineBoxes{medicineBoxId=2, box=Box{boxId='2', number='23', location='null', capacity=0, name='null'}, medicineCount=40}]} OrderedBox{boxNumber='10', medicineCount=9}, exception={}
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy131.save(Unknown Source)
+	at com.mms.thp.service.impl.MedicineServiceImpl.populateRetailEntity(MedicineServiceImpl.java:278)
+	at com.mms.thp.service.impl.MedicineServiceImpl.lambda$sellMedicine$0(MedicineServiceImpl.java:242)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at com.mms.thp.service.impl.MedicineServiceImpl.sellMedicine(MedicineServiceImpl.java:222)
+	at com.mms.thp.service.impl.MedicineServiceImpl$$FastClassBySpringCGLIB$$29b68f40.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.mms.thp.service.impl.MedicineServiceImpl$$EnhancerBySpringCGLIB$$f57f9dbf.sellMedicine(<generated>)
+	at com.mms.thp.controller.mvc.MedicineMvcController.sellMedicine(MedicineMvcController.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:223)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:780)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:748)
+	at org.hibernate.engine.spi.CascadingActions$7.cascade(CascadingActions.java:298)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:510)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:434)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:543)
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:474)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:437)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:153)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:459)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:293)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at jdk.proxy3/jdk.proxy3.$Proxy119.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at jdk.proxy3/jdk.proxy3.$Proxy119.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:666)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 133 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'boxId' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 198 common frames omitted
+2024-12-23_22:30:33.953 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(populateRetailEntity)|
+2024-12-23_22:30:33.955 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Selling medicineCount 20 from the box 23
+2024-12-23_22:30:33.956 [http-nio-8080-exec-9] ERROR c.m.t.s.impl.MedicineServiceImpl - SERVICE|Exception|{}
+org.hibernate.AssertionFailure: null id in com.mms.thp.model.RetailMedicine entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.internal.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:76)
+	at org.hibernate.event.internal.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:203)
+	at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:162)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:229)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:93)
+	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:50)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1372)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1452)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1665)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy122.findByNumber(Unknown Source)
+	at com.mms.thp.service.impl.MedicineServiceImpl.lambda$sellMedicine$0(MedicineServiceImpl.java:224)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at com.mms.thp.service.impl.MedicineServiceImpl.sellMedicine(MedicineServiceImpl.java:222)
+	at com.mms.thp.service.impl.MedicineServiceImpl$$FastClassBySpringCGLIB$$29b68f40.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.mms.thp.service.impl.MedicineServiceImpl$$EnhancerBySpringCGLIB$$f57f9dbf.sellMedicine(<generated>)
+	at com.mms.thp.controller.mvc.MedicineMvcController.sellMedicine(MedicineMvcController.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:223)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-12-23_22:30:33.957 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(sellMedicine)|
+2024-12-23_22:42:13.962 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9398 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:42:13.963 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:42:36.629 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9420 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:42:36.629 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:42:39.029 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.646 seconds (JVM running for 2.97)
+2024-12-23_22:42:45.692 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:42:45.725 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:42:45.769 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:42:45.783 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:42:47.875 [http-nio-8080-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_22:42:47.875 [http-nio-8080-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_22:43:05.959 [http-nio-8080-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=0, name='pulsatilla', company='sbl', price=30.0, purchaseDate=null, volume=100, box=null}|
+2024-12-23_22:43:05.982 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=0, name='pulsatilla', company='sbl', price=30.0, purchaseDate=null, volume=100, box=null}
+2024-12-23_22:43:06.009 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Box not present creating the box
+2024-12-23_22:43:06.034 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the box, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}
+2024-12-23_22:43:06.046 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine not in the db, creating the medicine
+2024-12-23_22:43:06.057 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:43:06 IST 2024, volume=100, box=null}
+2024-12-23_22:43:06.057 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createOrSaveCompanyWithMedicine)|Params: companyName=sbl, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:43:06 IST 2024, volume=100, box=null}
+2024-12-23_22:43:06.060 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Company info not found creating a new company entry
+2024-12-23_22:43:06.060 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Found the company=com.mms.thp.model.Company@1bc1c
+2024-12-23_22:43:06.066 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Created the entry for CompanyDetails for the medicine
+2024-12-23_22:43:06.067 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createOrSaveCompanyWithMedicine)|
+2024-12-23_22:43:06.067 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createMedicineBoxEntry)|Params: theMedicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=Mon Dec 23 22:43:06 IST 2024, volume=100, box=null}, theBox=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, addedCount=10|
+2024-12-23_22:43:06.071 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBox entry is not present creating a medicine box entry
+2024-12-23_22:43:06.074 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Saved the MedicineBox entry
+2024-12-23_22:43:06.074 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createMedicineBoxEntry)|
+2024-12-23_22:43:06.074 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(addMedicine)|
+2024-12-23_22:43:06.103 [http-nio-8080-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(insertMedicine)|
+2024-12-23_22:43:06.108 [http-nio-8080-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:43:06.109 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:43:06.115 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:43:06.134 [http-nio-8080-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:43:08.091 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:43:08.112 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:43:08.126 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]}
+2024-12-23_22:43:08.131 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]
+2024-12-23_22:43:08.131 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:43:08.134 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:43:09.565 [http-nio-8080-exec-3] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(updateMedicineCount)|Params: medicineId=1|
+2024-12-23_22:43:09.568 [http-nio-8080-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:43:09.572 [http-nio-8080-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]}
+2024-12-23_22:43:09.576 [http-nio-8080-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]
+2024-12-23_22:43:09.577 [http-nio-8080-exec-3] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:43:09.579 [http-nio-8080-exec-3] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(updateMedicineCount)|
+2024-12-23_22:43:11.046 [http-nio-8080-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:43:11.050 [http-nio-8080-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:43:11.056 [http-nio-8080-exec-4] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:43:11.069 [http-nio-8080-exec-4] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:43:12.865 [http-nio-8080-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:43:12.869 [http-nio-8080-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:43:12.874 [http-nio-8080-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]}
+2024-12-23_22:43:12.880 [http-nio-8080-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]
+2024-12-23_22:43:12.880 [http-nio-8080-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:43:12.882 [http-nio-8080-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:43:26.409 [http-nio-8080-exec-10] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(sellMedicine)|Params: medicineOrder=MedicineOrder{medicineId=1, boxes=[OrderedBox{boxNumber='23', medicineCount=5}]}|
+2024-12-23_22:43:26.439 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(sellMedicine)|Params: medicineOrder=MedicineOrder{medicineId=1, boxes=[OrderedBox{boxNumber='23', medicineCount=5}]}
+2024-12-23_22:43:26.457 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine present in the db medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}]}
+2024-12-23_22:43:26.458 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Selling medicineCount 5 from the box 23
+2024-12-23_22:43:26.460 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Box present in the db, theBox=Box{boxId='1', number='23', location='null', capacity=0, name='null'}
+2024-12-23_22:43:26.463 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBoxes entry is present in the db, medicineBoxes=MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=10}
+2024-12-23_22:43:26.463 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Adjusting the medicine count in the box, new MedicineCount=5
+2024-12-23_22:43:26.463 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(populateRetailEntity)|Params: medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=5}]}, orderedBox=OrderedBox{boxNumber='23', medicineCount=5}
+2024-12-23_22:43:26.465 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - Creating retail information
+2024-12-23_22:43:26.513 [http-nio-8080-exec-10] ERROR c.m.t.s.impl.MedicineServiceImpl - error in populateRetailEntity: Medicine{medicineId=1, name='pulsatilla', company='sbl', price=30.0, purchaseDate=2024-12-23, volume=100, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='23', location='null', capacity=0, name='null'}, medicineCount=5}]} OrderedBox{boxNumber='23', medicineCount=5}, exception={}
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy130.save(Unknown Source)
+	at com.mms.thp.service.impl.MedicineServiceImpl.populateRetailEntity(MedicineServiceImpl.java:278)
+	at com.mms.thp.service.impl.MedicineServiceImpl.lambda$sellMedicine$0(MedicineServiceImpl.java:242)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at com.mms.thp.service.impl.MedicineServiceImpl.sellMedicine(MedicineServiceImpl.java:222)
+	at com.mms.thp.service.impl.MedicineServiceImpl$$FastClassBySpringCGLIB$$29b68f40.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.mms.thp.service.impl.MedicineServiceImpl$$EnhancerBySpringCGLIB$$fd0d4be5.sellMedicine(<generated>)
+	at com.mms.thp.controller.mvc.MedicineMvcController.sellMedicine(MedicineMvcController.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:223)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:780)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:748)
+	at org.hibernate.engine.spi.CascadingActions$7.cascade(CascadingActions.java:298)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:510)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:434)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:543)
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:474)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:437)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:153)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:459)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:293)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at jdk.proxy3/jdk.proxy3.$Proxy119.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at jdk.proxy3/jdk.proxy3.$Proxy119.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:666)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 133 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'boxId' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 198 common frames omitted
+2024-12-23_22:43:26.514 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(populateRetailEntity)|
+2024-12-23_22:43:26.516 [http-nio-8080-exec-10] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(sellMedicine)|
+2024-12-23_22:47:54.328 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9461 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:47:54.328 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:47:56.741 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.772 seconds (JVM running for 3.115)
+2024-12-23_22:48:05.337 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:48:05.379 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:48:05.423 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:48:05.435 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:48:09.070 [http-nio-8080-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadAddMedicinePage)|Params:|
+2024-12-23_22:48:09.071 [http-nio-8080-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadAddMedicinePage)|
+2024-12-23_22:48:39.634 [http-nio-8080-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(insertMedicine)|Params: medicine=Medicine{medicineId=0, name='pulsatilla', company='sbl', price=200.0, purchaseDate=null, volume=450, box=null}|
+2024-12-23_22:48:39.664 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(addMedicine)|Params: medicine=Medicine{medicineId=0, name='pulsatilla', company='sbl', price=200.0, purchaseDate=null, volume=450, box=null}
+2024-12-23_22:48:39.695 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Box not present creating the box
+2024-12-23_22:48:39.717 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the box, box=Box{boxId='1', number='39', location='null', capacity=0, name='null'}
+2024-12-23_22:48:39.724 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine not in the db, creating the medicine
+2024-12-23_22:48:39.734 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=200.0, purchaseDate=Mon Dec 23 22:48:39 IST 2024, volume=450, box=null}
+2024-12-23_22:48:39.734 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createOrSaveCompanyWithMedicine)|Params: companyName=sbl, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=200.0, purchaseDate=Mon Dec 23 22:48:39 IST 2024, volume=450, box=null}
+2024-12-23_22:48:39.738 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Company info not found creating a new company entry
+2024-12-23_22:48:39.738 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Found the company=com.mms.thp.model.Company@1bc1c
+2024-12-23_22:48:39.744 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Created the entry for CompanyDetails for the medicine
+2024-12-23_22:48:39.744 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createOrSaveCompanyWithMedicine)|
+2024-12-23_22:48:39.744 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(createMedicineBoxEntry)|Params: theMedicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=200.0, purchaseDate=Mon Dec 23 22:48:39 IST 2024, volume=450, box=null}, theBox=Box{boxId='1', number='39', location='null', capacity=0, name='null'}, addedCount=15|
+2024-12-23_22:48:39.749 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBox entry is not present creating a medicine box entry
+2024-12-23_22:48:39.752 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - Saved the MedicineBox entry
+2024-12-23_22:48:39.752 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(createMedicineBoxEntry)|
+2024-12-23_22:48:39.752 [http-nio-8080-exec-8] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(addMedicine)|
+2024-12-23_22:48:39.762 [http-nio-8080-exec-8] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(insertMedicine)|
+2024-12-23_22:48:39.767 [http-nio-8080-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:48:39.769 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:48:39.777 [http-nio-8080-exec-9] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:48:39.806 [http-nio-8080-exec-9] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:48:42.147 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(loadMedicineDetailPage)|Params: medicineId=1|
+2024-12-23_22:48:42.169 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(getMedicineById)|Params: id=1
+2024-12-23_22:48:42.182 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Fetched the medicine from repository, medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=200.0, purchaseDate=2024-12-23, volume=450, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='39', location='null', capacity=0, name='null'}, medicineCount=15}]}
+2024-12-23_22:48:42.188 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine. medicine in stock, medicineBoxes=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='39', location='null', capacity=0, name='null'}, medicineCount=15}]
+2024-12-23_22:48:42.188 [http-nio-8080-exec-2] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(getMedicineById)|
+2024-12-23_22:48:42.191 [http-nio-8080-exec-2] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(loadMedicineDetailPage)|
+2024-12-23_22:48:56.232 [http-nio-8080-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(sellMedicine)|Params: medicineOrder=MedicineOrder{medicineId=1, boxes=[OrderedBox{boxNumber='39', medicineCount=5}]}|
+2024-12-23_22:48:56.270 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(sellMedicine)|Params: medicineOrder=MedicineOrder{medicineId=1, boxes=[OrderedBox{boxNumber='39', medicineCount=5}]}
+2024-12-23_22:48:56.296 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Medicine present in the db medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=200.0, purchaseDate=2024-12-23, volume=450, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='39', location='null', capacity=0, name='null'}, medicineCount=15}]}
+2024-12-23_22:48:56.296 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Selling medicineCount 5 from the box 39
+2024-12-23_22:48:56.299 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Box present in the db, theBox=Box{boxId='1', number='39', location='null', capacity=0, name='null'}
+2024-12-23_22:48:56.303 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - MedicineBoxes entry is present in the db, medicineBoxes=MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='39', location='null', capacity=0, name='null'}, medicineCount=15}
+2024-12-23_22:48:56.304 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Adjusting the medicine count in the box, new MedicineCount=10
+2024-12-23_22:48:56.304 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(populateRetailEntity)|Params: medicine=Medicine{medicineId=1, name='pulsatilla', company='sbl', price=200.0, purchaseDate=2024-12-23, volume=450, box=[MedicineBoxes{medicineBoxId=1, box=Box{boxId='1', number='39', location='null', capacity=0, name='null'}, medicineCount=10}]}, orderedBox=OrderedBox{boxNumber='39', medicineCount=5}
+2024-12-23_22:48:56.306 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Creating retail information
+2024-12-23_22:48:56.330 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - Retail information saved to db
+2024-12-23_22:48:56.330 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(populateRetailEntity)|
+2024-12-23_22:48:56.334 [http-nio-8080-exec-5] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|End of(sellMedicine)|
+2024-12-23_22:48:56.342 [http-nio-8080-exec-5] INFO  c.m.t.c.mvc.MedicineMvcController - End of(sellMedicine)|
+2024-12-23_22:48:56.347 [http-nio-8080-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:48:56.348 [http-nio-8080-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:48:56.352 [http-nio-8080-exec-6] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:48:56.361 [http-nio-8080-exec-6] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_22:57:49.004 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9560 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_22:57:49.005 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_22:57:51.419 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.794 seconds (JVM running for 3.177)
+2024-12-23_22:57:57.251 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_22:57:57.302 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_22:57:57.357 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_22:57:57.400 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_23:00:37.509 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9589 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_23:00:37.509 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_23:00:39.908 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.804 seconds (JVM running for 3.121)
+2024-12-23_23:00:44.885 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_23:00:44.921 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_23:00:44.976 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_23:00:45.026 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_23:01:16.028 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9612 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_23:01:16.028 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_23:01:18.340 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.578 seconds (JVM running for 2.862)
+2024-12-23_23:01:22.228 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_23:01:22.259 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_23:01:22.298 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_23:01:22.346 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_23:03:15.945 [restartedMain] INFO  com.mms.thp.DemoApplication - Starting DemoApplication using Java 21.0.5 on Shubhasishs-MacBook-Air.local with PID 9629 (/Users/shubhasishbhunia/projects/backend/mms/target/classes started by shubhasishbhunia in /Users/shubhasishbhunia/projects/backend/mms)
+2024-12-23_23:03:15.945 [restartedMain] INFO  com.mms.thp.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23_23:03:18.212 [restartedMain] INFO  com.mms.thp.DemoApplication - Started DemoApplication in 2.608 seconds (JVM running for 2.908)
+2024-12-23_23:03:21.143 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_23:03:21.155 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_23:03:21.186 [http-nio-8080-exec-1] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_23:03:21.215 [http-nio-8080-exec-1] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|
+2024-12-23_23:03:31.602 [http-nio-8080-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|Start of(getMedicineList)|Params:|
+2024-12-23_23:03:31.638 [http-nio-8080-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - SERVICE|Start of(findAllMedicine)|Params: pageNumber=0, recordPerPage=15
+2024-12-23_23:03:31.659 [http-nio-8080-exec-7] INFO  c.m.t.s.impl.MedicineServiceImpl - Got the medicine lis and populating the transient field in the medicine
+2024-12-23_23:03:31.683 [http-nio-8080-exec-7] INFO  c.m.t.c.mvc.MedicineMvcController - CONTROLLER|End of(getMedicineList)|

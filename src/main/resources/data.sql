@@ -1,4 +1,5 @@
-select * from medicine;
+show databases;
+--select * from medicine;
 --truncate table box;
 --truncate table medicine_box;
 --truncate table medicine;
